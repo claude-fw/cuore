@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  ESEMPIO, NON caricato. Backup settimanale verificato di Finance e School (app/bridge/backup_settimanale.py), la
+  domenica alle 11:30, prima della rotazione dei backup (cloud.finance.rotazione, 12:00). Gli originali sono solo letti.
+  Accensione e spegnimento: con launchctl (load/unload), a mano.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>cloud.cuore.backup-settimanale</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>-B</string>
+    <string>/Users/TUO-UTENTE/Developer/cuore/app/bridge/backup_settimanale.py</string>
+  </array>
+  <!-- Weekday 0 = domenica. Con il Mac in stop parte al risveglio; al massimo una copia al giorno per area. -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Weekday</key><integer>0</integer>
+    <key>Hour</key><integer>11</integer>
+    <key>Minute</key><integer>30</integer>
+  </dict>
+  <key>RunAtLoad</key>
+  <false/>
+  <key>ProcessType</key>
+  <string>Background</string>
+  <key>LowPriorityIO</key>
+  <true/>
+  <key>Nice</key>
+  <integer>10</integer>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>PYTHONIOENCODING</key>
+    <string>utf-8</string>
+    <key>LANG</key>
+    <string>it_IT.UTF-8</string>
+  </dict>
+  <key>StandardOutPath</key>
+  <string>/Users/TUO-UTENTE/Library/Logs/Cloud/cuore-backup-settimanale.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/TUO-UTENTE/Library/Logs/Cloud/cuore-backup-settimanale.err.log</string>
+</dict>
+</plist>

@@ -1,0 +1,22 @@
+{
+  "nota": "Modello delle impostazioni dei promemoria di CUORE sul Mac. Di solito le scrive l'app (Impostazioni) tramite il ponte; a mano: copiarlo in ~/Library/Application Support/CUORE/promemoria.json. attivo=false spegne tutto; ogni promemoria ha attivo e momenti (mattina 07:15, pomeriggio 15:00, sera 19:00). Le proposte nuove (sch_compiti_sera, fin_settimana) sono spente.",
+  "attivo": true,
+  "riservato": true,
+  "promemoria": {
+    "sch_verifica": {"attivo": true, "momenti": ["mattina", "pomeriggio", "sera"]},
+    "sch_compiti": {"attivo": true, "momenti": ["mattina", "pomeriggio", "sera"]},
+    "sch_assenze": {"attivo": true, "momenti": ["mattina", "pomeriggio", "sera"]},
+    "sch_dati": {"attivo": true, "momenti": ["mattina", "pomeriggio", "sera"]},
+    "sch_voti": {"attivo": true, "momenti": ["mattina", "pomeriggio", "sera"]},
+    "sch_comunicazioni": {"attivo": true, "momenti": ["mattina", "pomeriggio", "sera"]},
+    "sch_impegni": {"attivo": true, "momenti": ["sera"]},
+    "sch_compiti_sera": {"attivo": false, "momenti": ["sera"]},
+    "fin_budget": {"attivo": true, "momenti": ["mattina", "pomeriggio", "sera"]},
+    "fin_dati": {"attivo": true, "momenti": ["mattina", "pomeriggio", "sera"]},
+    "fin_classificare": {"attivo": true, "momenti": ["mattina", "pomeriggio", "sera"]},
+    "fin_contanti": {"attivo": true, "momenti": ["sera"]},
+    "fin_appunti": {"attivo": true, "momenti": ["mattina", "pomeriggio", "sera"]},
+    "fin_settimana": {"attivo": false, "momenti": ["sera"]}
+  },
+  "soglie": {"verifica_giorni": [1, 3], "school_dati_ore": 24, "budget_percento": 85, "finance_dati_giorni": 7}
+}

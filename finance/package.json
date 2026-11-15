@@ -1,0 +1,33 @@
+{
+  "name": "cloud-finance",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cloud Finance: nucleo locale (SQLite oggi, Cloudflare D1 domani) per conti, transazioni, riconciliazione e obiettivi. Solo dati sintetici nel repository.",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "bin": {
+    "cloud-finance": "src/cli/main.ts"
+  },
+  "scripts": {
+    "cli": "node src/cli/main.ts",
+    "test": "node --test \"test/**/*.test.ts\"",
+    "test:d1": "CLOUD_FINANCE_TEST_DB=d1 WRANGLER_SEND_METRICS=false node --test \"test/**/*.test.ts\"",
+    "typecheck": "tsc -p tsconfig.json",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "build": "tsc -p tsconfig.build.json",
+    "migrations:generate": "node scripts/migrations.ts generate",
+    "migrations:check": "node scripts/migrations.ts check",
+    "check": "npm run typecheck && npm run lint && npm run migrations:check && npm test && npm run test:d1 && npm run build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "@types/node": "24.19.1",
+    "esbuild": "0.28.1",
+    "miniflare": "5.20261113.0-beta",
+    "typescript": "7.0.2",
+    "wrangler": "4.162.0"
+  }
+}

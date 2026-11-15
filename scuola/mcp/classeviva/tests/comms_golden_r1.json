@@ -1,0 +1,3117 @@
+{
+ "comm_version_r1": "r1-4c44d9",
+ "comunicazioni": {
+  "cls:C-EN/a-disc": {
+   "comm_id": "453b6ba468d0",
+   "fonte": "classroom",
+   "tipo": "announcement",
+   "uid": "cls:C-EN/a-disc",
+   "data": "2026-10-29",
+   "stato": "conflitto",
+   "dati": {
+    "data_comunicazione": "2026-10-29",
+    "titolo": null,
+    "testo": "Verifica di storia sul Rinascimento",
+    "testo_troncato": false,
+    "corso": {
+     "id": "C-EN",
+     "nome": "4X - Inglese",
+     "confermato": true
+    },
+    "numero": null,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": null
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "RC1",
+    "ambito": {
+     "valore": "corso",
+     "stato": "determinato",
+     "regola": "A3",
+     "criterio": "ambito corso: annuncio di un corso condiviso o non confermato; la materia resta da_verificare"
+    },
+    "materia": {
+     "key": "inglese",
+     "stato": "conflitto",
+     "candidati": [
+      "inglese"
+     ],
+     "criterio": "corso monomateria confermato",
+     "menzionate_nel_testo": [
+      "storia"
+     ]
+    },
+    "classe_principale": {
+     "valore": "verifica",
+     "stato": "proposto",
+     "pari_livello": null
+    },
+    "funzioni": [
+     {
+      "funzione": "verifica",
+      "stato": "proposto",
+      "regola": "V2",
+      "motivazione": "verifica proposta: solo parola di verifica (nessuna data attribuita)",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "verifica: verifica"
+       }
+      ]
+     }
+    ],
+    "date": [],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [
+      {
+       "conflitto_id": "a24e472a484c",
+       "tipo": "candidati_multipli",
+       "regola": "RC1"
+      }
+     ],
+     "non_determinabili": 0,
+     "nota": "M5 e' solo evidenza corroborativa: non crea classificazioni e non e' un fatto"
+    },
+    "conflitti": [
+     {
+      "tipo": "materia_discordante",
+      "regola": "RC1",
+      "motivazione": "il testo nomina storia ma il corso/attribuzione indica inglese: nessuna scelta",
+      "valori": {
+       "testo": [
+        "storia"
+       ],
+       "corso": [
+        "inglese"
+       ]
+      }
+     }
+    ],
+    "informazioni_mancanti": [
+     "materia non determinata: corso monomateria confermato"
+    ],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cls:C-EN/a-disc",
+    "registry_version": 1,
+    "content_hash": "4356ebfa997af3b2d1efcdc3486724d69fd984eb90dec4751129bc64c7d719df",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cls:C-EN/a-ing": {
+   "comm_id": "c7a33d50bb52",
+   "fonte": "classroom",
+   "tipo": "announcement",
+   "uid": "cls:C-EN/a-ing",
+   "data": "2026-10-26",
+   "stato": "probabile",
+   "dati": {
+    "data_comunicazione": "2026-10-26",
+    "titolo": null,
+    "testo": "Esercizi per giovedi 29/10 ripasso generale per verifica",
+    "testo_troncato": false,
+    "corso": {
+     "id": "C-EN",
+     "nome": "4X - Inglese",
+     "confermato": true
+    },
+    "numero": null,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": null
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "C1",
+    "ambito": {
+     "valore": "materia",
+     "stato": "determinato",
+     "regola": "A2",
+     "criterio": "ambito materia determinato: annuncio di un corso Classroom monomateria CONFERMATO"
+    },
+    "materia": {
+     "key": "inglese",
+     "stato": "determinata",
+     "candidati": [
+      "inglese"
+     ],
+     "criterio": "corso monomateria confermato",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": "compito",
+     "stato": "probabile",
+     "pari_livello": null
+    },
+    "funzioni": [
+     {
+      "funzione": "verifica",
+      "stato": "proposto",
+      "regola": "V2",
+      "motivazione": "verifica proposta: solo parola di verifica (nessuna data attribuita)",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "verifica: verifica"
+       }
+      ]
+     },
+     {
+      "funzione": "compito",
+      "stato": "probabile",
+      "regola": "C1",
+      "motivazione": "compito probabile: parola di compito + data esplicita o riferimento relativo (non risolto)",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "compito: esercizi, ripasso"
+       },
+       {
+        "codice": "S5",
+        "segnale": "data esplicita",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "'giovedi 29/10' (2026-10-29): data presente, ruolo non_attribuita"
+       },
+       {
+        "codice": "S5",
+        "segnale": "riferimento relativo",
+        "esito": "a_favore",
+        "peso": "debole",
+        "dettaglio": "'per giovedi' RILEVATO ma NON risolto in una data"
+       }
+      ]
+     }
+    ],
+    "date": [
+     {
+      "testo": "giovedi 29/10",
+      "data": "2026-10-29",
+      "ruolo": "non_attribuita",
+      "anno_esplicito": false,
+      "stato": "valida"
+     }
+    ],
+    "riferimenti_relativi_non_risolti": [
+     "per giovedi"
+    ],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [
+      {
+       "conflitto_id": "4b684a93ad4b",
+       "tipo": "segnali_discordanti",
+       "regola": "RC2"
+      }
+     ],
+     "non_determinabili": 0,
+     "nota": "M5 e' solo evidenza corroborativa: non crea classificazioni e non e' un fatto"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [
+     "riferimenti relativi rilevati e NON risolti in data: per giovedi"
+    ],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cls:C-EN/a-ing",
+    "registry_version": 1,
+    "content_hash": "ffd68b504337932cfd0079039034fdae1ebdf34da2e3985747ba53a42b96f67c",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cls:C-EN/a-nat": {
+   "comm_id": "aa68531ec697",
+   "fonte": "classroom",
+   "tipo": "announcement",
+   "uid": "cls:C-EN/a-nat",
+   "data": "2026-10-29",
+   "stato": "determinato",
+   "dati": {
+    "data_comunicazione": "2026-10-29",
+    "titolo": null,
+    "testo": "Guardate qui",
+    "testo_troncato": false,
+    "corso": {
+     "id": "C-EN",
+     "nome": "4X - Inglese",
+     "confermato": true
+    },
+    "numero": null,
+    "categoria_scuola": null,
+    "materiali": 1,
+    "validita_nativa": null
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "M1",
+    "ambito": {
+     "valore": "materia",
+     "stato": "determinato",
+     "regola": "A2",
+     "criterio": "ambito materia determinato: annuncio di un corso Classroom monomateria CONFERMATO"
+    },
+    "materia": {
+     "key": "inglese",
+     "stato": "determinata",
+     "candidati": [
+      "inglese"
+     ],
+     "criterio": "corso monomateria confermato",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": "materiale",
+     "stato": "determinato",
+     "pari_livello": null
+    },
+    "funzioni": [
+     {
+      "funzione": "materiale",
+      "stato": "determinato",
+      "regola": "M1",
+      "motivazione": "materiale determinato: materiali nel record nativo di un annuncio Classroom (gli allegati delle circolari sono la circolare stessa: non contano)",
+      "prove": [
+       {
+        "codice": "S6",
+        "segnale": "struttura nativa",
+        "esito": "a_favore",
+        "peso": "forte",
+        "dettaglio": "1 materiali nel record nativo"
+       }
+      ]
+     }
+    ],
+    "date": [],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "nessun collegamento M5 per questa comunicazione"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cls:C-EN/a-nat",
+    "registry_version": 1,
+    "content_hash": "e8b10319eb57b6864dd6d44a1fdc8c7a647b3a3e69534b5ea5fa99cb21b40170",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cls:C-EN/a-neg": {
+   "comm_id": "e7485f620f5f",
+   "fonte": "classroom",
+   "tipo": "announcement",
+   "uid": "cls:C-EN/a-neg",
+   "data": "2026-10-29",
+   "stato": "proposto",
+   "dati": {
+    "data_comunicazione": "2026-10-29",
+    "titolo": null,
+    "testo": "Nessuna verifica domani",
+    "testo_troncato": false,
+    "corso": {
+     "id": "C-EN",
+     "nome": "4X - Inglese",
+     "confermato": true
+    },
+    "numero": null,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": null
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "V3",
+    "ambito": {
+     "valore": "materia",
+     "stato": "determinato",
+     "regola": "A2",
+     "criterio": "ambito materia determinato: annuncio di un corso Classroom monomateria CONFERMATO"
+    },
+    "materia": {
+     "key": "inglese",
+     "stato": "determinata",
+     "candidati": [
+      "inglese"
+     ],
+     "criterio": "corso monomateria confermato",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": "verifica",
+     "stato": "proposto",
+     "pari_livello": null
+    },
+    "funzioni": [
+     {
+      "funzione": "verifica",
+      "stato": "proposto",
+      "regola": "V3",
+      "motivazione": "verifica proposta (tetto): parola di verifica con variazione/negazione (annullata, rinviata, nessuna verifica...)",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "verifica: verifica"
+       },
+       {
+        "codice": "S9",
+        "segnale": "variazione/negazione",
+        "esito": "contro",
+        "peso": "media",
+        "dettaglio": "parole di variazione: nessuna verifica"
+       }
+      ]
+     }
+    ],
+    "date": [],
+    "riferimenti_relativi_non_risolti": [
+     "domani"
+    ],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [
+      {
+       "conflitto_id": "f8922519579a",
+       "tipo": "candidati_multipli",
+       "regola": "RC1"
+      }
+     ],
+     "non_determinabili": 0,
+     "nota": "M5 e' solo evidenza corroborativa: non crea classificazioni e non e' un fatto"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [
+     "riferimenti relativi rilevati e NON risolti in data: domani"
+    ],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cls:C-EN/a-neg",
+    "registry_version": 1,
+    "content_hash": "5d24f825821cacd3c261949d571553315843350d46ba990ca36c9883e92d21cd",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cls:C-EN/a-url": {
+   "comm_id": "179fa71cccde",
+   "fonte": "classroom",
+   "tipo": "announcement",
+   "uid": "cls:C-EN/a-url",
+   "data": "2026-10-29",
+   "stato": "probabile",
+   "dati": {
+    "data_comunicazione": "2026-10-29",
+    "titolo": null,
+    "testo": "https://example.org/video-grammar",
+    "testo_troncato": false,
+    "corso": {
+     "id": "C-EN",
+     "nome": "4X - Inglese",
+     "confermato": true
+    },
+    "numero": null,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": null
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "M2",
+    "ambito": {
+     "valore": "materia",
+     "stato": "determinato",
+     "regola": "A2",
+     "criterio": "ambito materia determinato: annuncio di un corso Classroom monomateria CONFERMATO"
+    },
+    "materia": {
+     "key": "inglese",
+     "stato": "determinata",
+     "candidati": [
+      "inglese"
+     ],
+     "criterio": "corso monomateria confermato",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": "materiale",
+     "stato": "probabile",
+     "pari_livello": null
+    },
+    "funzioni": [
+     {
+      "funzione": "materiale",
+      "stato": "probabile",
+      "regola": "M2",
+      "motivazione": "materiale probabile: URL nel testo (riconoscimento sintattico)",
+      "prove": [
+       {
+        "codice": "S7",
+        "segnale": "URL nel testo",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "1 URL"
+       }
+      ]
+     }
+    ],
+    "date": [],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "nessun collegamento M5 per questa comunicazione"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cls:C-EN/a-url",
+    "registry_version": 1,
+    "content_hash": "ab22b61ccc9e68afb0c925e9ebb749fc4eeb610f8758cdaa331bf87ef1de6550",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cls:C-LE/a-ita": {
+   "comm_id": "e8b64352f070",
+   "fonte": "classroom",
+   "tipo": "announcement",
+   "uid": "cls:C-LE/a-ita",
+   "data": "2026-10-27",
+   "stato": "proposto",
+   "dati": {
+    "data_comunicazione": "2026-10-27",
+    "titolo": null,
+    "testo": "Ariosto: leggete il canto primo",
+    "testo_troncato": false,
+    "corso": {
+     "id": "C-LE",
+     "nome": "Lettere - Bianchi",
+     "confermato": true
+    },
+    "numero": null,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": null
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "C2",
+    "ambito": {
+     "valore": "corso",
+     "stato": "determinato",
+     "regola": "A3",
+     "criterio": "ambito corso: annuncio di un corso condiviso o non confermato; la materia resta da_verificare"
+    },
+    "materia": {
+     "key": null,
+     "stato": "da_verificare",
+     "candidati": [
+      "italiano",
+      "latino"
+     ],
+     "criterio": "corso condiviso (italiano/latino): elemento senza topic (gli annunci non hanno topic)",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": "compito",
+     "stato": "proposto",
+     "pari_livello": null
+    },
+    "funzioni": [
+     {
+      "funzione": "compito",
+      "stato": "proposto",
+      "regola": "C2",
+      "motivazione": "compito proposto: solo parola di compito",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "compito: leggete"
+       }
+      ]
+     }
+    ],
+    "date": [],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 1,
+     "nota": "M5 e' solo evidenza corroborativa: non crea classificazioni e non e' un fatto"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [
+     "materia non determinata: corso condiviso (italiano/latino): elemento senza topic (gli annunci non hanno topic)"
+    ],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cls:C-LE/a-ita",
+    "registry_version": 1,
+    "content_hash": "3cd24ebd15edbea39ef920ea8ca7df18401e72f13cb9fb7224148b3eb9212e05",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cls:C-LE/a-nome": {
+   "comm_id": "2468f6f8f97f",
+   "fonte": "classroom",
+   "tipo": "announcement",
+   "uid": "cls:C-LE/a-nome",
+   "data": "2026-10-28",
+   "stato": "non_determinabile",
+   "dati": {
+    "data_comunicazione": "2026-10-28",
+    "titolo": null,
+    "testo": "Ariosto",
+    "testo_troncato": false,
+    "corso": {
+     "id": "C-LE",
+     "nome": "Lettere - Bianchi",
+     "confermato": true
+    },
+    "numero": null,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": null
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "RN1",
+    "ambito": {
+     "valore": "corso",
+     "stato": "determinato",
+     "regola": "A3",
+     "criterio": "ambito corso: annuncio di un corso condiviso o non confermato; la materia resta da_verificare"
+    },
+    "materia": {
+     "key": null,
+     "stato": "da_verificare",
+     "candidati": [
+      "italiano",
+      "latino"
+     ],
+     "criterio": "corso condiviso (italiano/latino): elemento senza topic (gli annunci non hanno topic)",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": null,
+     "stato": "non_determinabile",
+     "pari_livello": null
+    },
+    "funzioni": [],
+    "date": [],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 1,
+     "nota": "M5 e' solo evidenza corroborativa: non crea classificazioni e non e' un fatto"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [
+     "materia non determinata: corso condiviso (italiano/latino): elemento senza topic (gli annunci non hanno topic)",
+     "nessun indizio nel testo: nessuna classe determinabile (e' il risultato prudente)"
+    ],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cls:C-LE/a-nome",
+    "registry_version": 1,
+    "content_hash": "7871836a330de3fb9d8e32e67a80e613fb06e86e4d06435411f4d9ab4abb995c",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cls:C-MF/a-ver": {
+   "comm_id": "af61441a3df9",
+   "fonte": "classroom",
+   "tipo": "announcement",
+   "uid": "cls:C-MF/a-ver",
+   "data": "2026-10-29",
+   "stato": "probabile",
+   "dati": {
+    "data_comunicazione": "2026-10-29",
+    "titolo": null,
+    "testo": "Verifica del 4 novembre 2026: ricordate la calcolatrice",
+    "testo_troncato": false,
+    "corso": {
+     "id": "C-MF",
+     "nome": "4Z Mate & Fisica (prova) 2026/27",
+     "confermato": true
+    },
+    "numero": null,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": null
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "V1",
+    "ambito": {
+     "valore": "corso",
+     "stato": "determinato",
+     "regola": "A3",
+     "criterio": "ambito corso: annuncio di un corso condiviso o non confermato; la materia resta da_verificare"
+    },
+    "materia": {
+     "key": null,
+     "stato": "da_verificare",
+     "candidati": [
+      "fisica",
+      "matematica"
+     ],
+     "criterio": "corso condiviso (fisica/matematica): elemento senza topic (gli annunci non hanno topic)",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": "verifica",
+     "stato": "probabile",
+     "pari_livello": null
+    },
+    "funzioni": [
+     {
+      "funzione": "verifica",
+      "stato": "probabile",
+      "regola": "V1",
+      "motivazione": "verifica probabile: parola di verifica + data esplicita attribuita alla verifica",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "verifica: verifica"
+       },
+       {
+        "codice": "S5",
+        "segnale": "data esplicita",
+        "esito": "a_favore",
+        "peso": "forte",
+        "dettaglio": "'4 novembre 2026' (2026-11-04) e' attribuita alla verifica"
+       }
+      ]
+     },
+     {
+      "funzione": "avviso",
+      "stato": "proposto",
+      "regola": "G1",
+      "motivazione": "funzione proposta: una parola del lessico",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "avviso: ricordate"
+       }
+      ]
+     }
+    ],
+    "date": [
+     {
+      "testo": "4 novembre 2026",
+      "data": "2026-11-04",
+      "ruolo": "verifica",
+      "anno_esplicito": true,
+      "stato": "valida"
+     }
+    ],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 1,
+     "nota": "M5 e' solo evidenza corroborativa: non crea classificazioni e non e' un fatto"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [
+     "materia non determinata: corso condiviso (fisica/matematica): elemento senza topic (gli annunci non hanno topic)"
+    ],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cls:C-MF/a-ver",
+    "registry_version": 1,
+    "content_hash": "4a50f481899f80dba611943f49411f3dd8a6a06f0ee98872228988faddc58435",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cls:C-MF/a-ver2": {
+   "comm_id": "b9e701328352",
+   "fonte": "classroom",
+   "tipo": "announcement",
+   "uid": "cls:C-MF/a-ver2",
+   "data": "2026-10-29",
+   "stato": "conflitto",
+   "dati": {
+    "data_comunicazione": "2026-10-29",
+    "titolo": null,
+    "testo": "Verifica del 2 novembre e verifica del 4 novembre",
+    "testo_troncato": false,
+    "corso": {
+     "id": "C-MF",
+     "nome": "4Z Mate & Fisica (prova) 2026/27",
+     "confermato": true
+    },
+    "numero": null,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": null
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "RC2",
+    "ambito": {
+     "valore": "corso",
+     "stato": "determinato",
+     "regola": "A3",
+     "criterio": "ambito corso: annuncio di un corso condiviso o non confermato; la materia resta da_verificare"
+    },
+    "materia": {
+     "key": null,
+     "stato": "da_verificare",
+     "candidati": [
+      "fisica",
+      "matematica"
+     ],
+     "criterio": "corso condiviso (fisica/matematica): elemento senza topic (gli annunci non hanno topic)",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": null,
+     "stato": "non_determinabile",
+     "pari_livello": null
+    },
+    "funzioni": [
+     {
+      "funzione": "verifica",
+      "stato": "conflitto",
+      "regola": "RC2",
+      "motivazione": "date diverse attribuite alla verifica nello stesso testo: 2026-11-02, 2026-11-04 (nessuna scelta)",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "verifica: verifica"
+       },
+       {
+        "codice": "S5",
+        "segnale": "data esplicita",
+        "esito": "a_favore",
+        "peso": "forte",
+        "dettaglio": "'2 novembre' (2026-11-02, anno dedotto dall'anno scolastico) e' attribuita alla verifica"
+       },
+       {
+        "codice": "S5",
+        "segnale": "data esplicita",
+        "esito": "a_favore",
+        "peso": "forte",
+        "dettaglio": "'4 novembre' (2026-11-04, anno dedotto dall'anno scolastico) e' attribuita alla verifica"
+       },
+       {
+        "codice": "S5",
+        "segnale": "data esplicita",
+        "esito": "contro",
+        "peso": "forte",
+        "dettaglio": "date diverse attribuite alla verifica: 2026-11-02, 2026-11-04"
+       }
+      ]
+     }
+    ],
+    "date": [
+     {
+      "testo": "2 novembre",
+      "data": "2026-11-02",
+      "ruolo": "verifica",
+      "anno_esplicito": false,
+      "stato": "valida"
+     },
+     {
+      "testo": "4 novembre",
+      "data": "2026-11-04",
+      "ruolo": "verifica",
+      "anno_esplicito": false,
+      "stato": "valida"
+     }
+    ],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 2,
+     "nota": "M5 e' solo evidenza corroborativa: non crea classificazioni e non e' un fatto"
+    },
+    "conflitti": [
+     {
+      "tipo": "date_discordanti",
+      "regola": "RC2",
+      "funzione": "verifica",
+      "motivazione": "date diverse attribuite alla verifica nello stesso testo: 2026-11-02, 2026-11-04 (nessuna scelta)",
+      "valori": [
+       "2026-11-02",
+       "2026-11-04"
+      ]
+     }
+    ],
+    "informazioni_mancanti": [
+     "materia non determinata: corso condiviso (fisica/matematica): elemento senza topic (gli annunci non hanno topic)"
+    ],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cls:C-MF/a-ver2",
+    "registry_version": 1,
+    "content_hash": "de7ea826c2234f6cb498b66326409a438e52481a2c4d8f3a3eebbb584872dbc0",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cls:C-SC/a-hist": {
+   "data": "2024-09-30",
+   "dati": {
+    "categoria_scuola": null,
+    "corso": {
+     "confermato": true,
+     "id": "C-SC",
+     "nome": "SCIENZE 4 (prova)"
+    },
+    "data_comunicazione": "2024-09-30",
+    "materiali": 0,
+    "numero": null,
+    "testo": "Verifica di scienze",
+    "testo_troncato": false,
+    "titolo": null,
+    "validita_nativa": null
+   },
+   "fonte": "classroom",
+   "fonte_record": {
+    "content_hash": "911a9ce4e9c689ba453935be836cc6b63cf93a3a958c99b4dc9af9f519e4c5b2",
+    "first_seen": "2026-11-01T21:21:34+00:00",
+    "registry_version": 1,
+    "source_status": "present",
+    "uid": "cls:C-SC/a-hist"
+   },
+   "freschezza": {
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca",
+    "stato": "senza_lettura"
+   },
+   "interpretazione": {
+    "ambito": {
+     "criterio": "ambito materia determinato: annuncio di un corso Classroom monomateria CONFERMATO",
+     "regola": "A2",
+     "stato": "determinato",
+     "valore": "materia"
+    },
+    "classe_principale": {
+     "pari_livello": null,
+     "stato": "proposto",
+     "valore": "verifica"
+    },
+    "collegamenti_m5": {
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "nessun collegamento M5 per questa comunicazione",
+     "usato_come_evidenza": false
+    },
+    "conflitti": [],
+    "date": [],
+    "funzioni": [
+     {
+      "funzione": "verifica",
+      "motivazione": "verifica proposta: solo parola di verifica (nessuna data attribuita)",
+      "prove": [
+       {
+        "codice": "S4",
+        "dettaglio": "verifica: verifica",
+        "esito": "a_favore",
+        "peso": "media",
+        "segnale": "parole chiave"
+       }
+      ],
+      "regola": "V2",
+      "stato": "proposto"
+     }
+    ],
+    "informazioni_mancanti": [],
+    "materia": {
+     "candidati": [
+      "scienze"
+     ],
+     "criterio": "corso monomateria confermato",
+     "key": "scienze",
+     "menzionate_nel_testo": [
+      "scienze"
+     ],
+     "stato": "determinata"
+    },
+    "nota": "interpretazione derivata: il record originale non e' stato modificato",
+    "perimetro": {
+     "anno": "2024-25",
+     "classe": null,
+     "valore": "storico"
+    },
+    "regola": "V2",
+    "riferimenti_relativi_non_risolti": []
+   },
+   "stato": "proposto",
+   "tipo": "announcement",
+   "uid": "cls:C-SC/a-hist"
+  },
+  "cls:C-SC/a-old": {
+   "data": "2025-09-30",
+   "dati": {
+    "categoria_scuola": null,
+    "corso": {
+     "confermato": true,
+     "id": "C-SC",
+     "nome": "SCIENZE 4 (prova)"
+    },
+    "data_comunicazione": "2025-09-30",
+    "materiali": 0,
+    "numero": null,
+    "testo": "Verifica di scienze del 3 ottobre",
+    "testo_troncato": false,
+    "titolo": null,
+    "validita_nativa": null
+   },
+   "fonte": "classroom",
+   "fonte_record": {
+    "content_hash": "fc3dfbaadf3bddcd185e10b3e617a8366d38421f80847bc99fe83f6b1cfad2ac",
+    "first_seen": "2026-11-01T21:21:34+00:00",
+    "registry_version": 1,
+    "source_status": "present",
+    "uid": "cls:C-SC/a-old"
+   },
+   "freschezza": {
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca",
+    "stato": "senza_lettura"
+   },
+   "interpretazione": {
+    "ambito": {
+     "criterio": "ambito materia determinato: annuncio di un corso Classroom monomateria CONFERMATO",
+     "regola": "A2",
+     "stato": "determinato",
+     "valore": "materia"
+    },
+    "classe_principale": {
+     "pari_livello": null,
+     "stato": "proposto",
+     "valore": "verifica"
+    },
+    "collegamenti_m5": {
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "nessun collegamento M5 per questa comunicazione",
+     "usato_come_evidenza": false
+    },
+    "conflitti": [],
+    "date": [
+     {
+      "anno_esplicito": false,
+      "data": "2025-10-03",
+      "ruolo": "non_attribuita",
+      "stato": "valida",
+      "testo": "3 ottobre"
+     }
+    ],
+    "funzioni": [
+     {
+      "funzione": "verifica",
+      "motivazione": "verifica proposta: solo parola di verifica (nessuna data attribuita)",
+      "prove": [
+       {
+        "codice": "S4",
+        "dettaglio": "verifica: verifica",
+        "esito": "a_favore",
+        "peso": "media",
+        "segnale": "parole chiave"
+       }
+      ],
+      "regola": "V2",
+      "stato": "proposto"
+     }
+    ],
+    "informazioni_mancanti": [],
+    "materia": {
+     "candidati": [
+      "scienze"
+     ],
+     "criterio": "corso monomateria confermato",
+     "key": "scienze",
+     "menzionate_nel_testo": [
+      "scienze"
+     ],
+     "stato": "determinata"
+    },
+    "nota": "interpretazione derivata: il record originale non e' stato modificato",
+    "perimetro": {
+     "anno": "2025-26",
+     "classe": "3a classe",
+     "valore": "operativo"
+    },
+    "regola": "V2",
+    "riferimenti_relativi_non_risolti": []
+   },
+   "stato": "proposto",
+   "tipo": "announcement",
+   "uid": "cls:C-SC/a-old"
+  },
+  "cls:C-SC/a-sci-nome": {
+   "comm_id": "cceb3431ee84",
+   "fonte": "classroom",
+   "tipo": "announcement",
+   "uid": "cls:C-SC/a-sci-nome",
+   "data": "2026-10-24",
+   "stato": "non_determinabile",
+   "dati": {
+    "data_comunicazione": "2026-10-24",
+    "titolo": null,
+    "testo": "Stechiometria delle reazioni chimiche",
+    "testo_troncato": false,
+    "corso": {
+     "id": "C-SC",
+     "nome": "SCIENZE 4 (prova)",
+     "confermato": true
+    },
+    "numero": null,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": null
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "RN1",
+    "ambito": {
+     "valore": "materia",
+     "stato": "determinato",
+     "regola": "A2",
+     "criterio": "ambito materia determinato: annuncio di un corso Classroom monomateria CONFERMATO"
+    },
+    "materia": {
+     "key": "scienze",
+     "stato": "determinata",
+     "candidati": [
+      "scienze"
+     ],
+     "criterio": "corso monomateria confermato",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": null,
+     "stato": "non_determinabile",
+     "pari_livello": null
+    },
+    "funzioni": [],
+    "date": [],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [
+      {
+       "link_id": "45a7e406cc66",
+       "relazione": "stesso_argomento",
+       "stato": "proposto",
+       "regola": "R3",
+       "con": {
+        "sistema": "classeviva",
+        "tipo": "agenda_event",
+        "uid": "cvv:1000103"
+       }
+      }
+     ],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "M5 e' solo evidenza corroborativa: non crea classificazioni e non e' un fatto"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [
+     "nessun indizio nel testo: nessuna classe determinabile (e' il risultato prudente)",
+     "esistono collegamenti M5 ma M5 e' solo corroborazione: non crea classificazioni"
+    ],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cls:C-SC/a-sci-nome",
+    "registry_version": 1,
+    "content_hash": "39488e584d14fada241e749a1954459abcac1ef80570172f9274b58cba5da20c",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cls:C-SC/a-sci-ver": {
+   "comm_id": "0484006885be",
+   "fonte": "classroom",
+   "tipo": "announcement",
+   "uid": "cls:C-SC/a-sci-ver",
+   "data": "2026-10-23",
+   "stato": "probabile",
+   "dati": {
+    "data_comunicazione": "2026-10-23",
+    "titolo": null,
+    "testo": "Ripasso per la verifica sulla stechiometria delle reazioni",
+    "testo_troncato": false,
+    "corso": {
+     "id": "C-SC",
+     "nome": "SCIENZE 4 (prova)",
+     "confermato": true
+    },
+    "numero": null,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": null
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "V4",
+    "ambito": {
+     "valore": "materia",
+     "stato": "determinato",
+     "regola": "A2",
+     "criterio": "ambito materia determinato: annuncio di un corso Classroom monomateria CONFERMATO"
+    },
+    "materia": {
+     "key": "scienze",
+     "stato": "determinata",
+     "candidati": [
+      "scienze"
+     ],
+     "criterio": "corso monomateria confermato",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": "verifica",
+     "stato": "probabile",
+     "pari_livello": null
+    },
+    "funzioni": [
+     {
+      "funzione": "verifica",
+      "stato": "probabile",
+      "regola": "V4",
+      "motivazione": "verifica probabile: V2 + collegamento M5 'prepara' (probabile|proposto) a una verifica ClasseViva (corroborativo)",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "verifica: verifica"
+       },
+       {
+        "codice": "S8",
+        "segnale": "collegamento M5",
+        "esito": "a_favore",
+        "peso": "corroborativa",
+        "dettaglio": "M5 collega l'annuncio a una verifica ClasseViva (c86a23ccdcf2 proposto): solo corroborazione"
+       }
+      ]
+     },
+     {
+      "funzione": "compito",
+      "stato": "proposto",
+      "regola": "C2",
+      "motivazione": "compito proposto: solo parola di compito",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "compito: ripasso"
+       }
+      ]
+     }
+    ],
+    "date": [],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": true,
+     "collegamenti": [
+      {
+       "link_id": "c86a23ccdcf2",
+       "relazione": "prepara",
+       "stato": "proposto",
+       "regola": "R3",
+       "con": {
+        "sistema": "classeviva",
+        "tipo": "agenda_event",
+        "uid": "cvv:1000103"
+       }
+      }
+     ],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "M5 e' solo evidenza corroborativa: non crea classificazioni e non e' un fatto"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cls:C-SC/a-sci-ver",
+    "registry_version": 1,
+    "content_hash": "f90f442e4c00620795e9de72f6637b92d8a0a52e58d00d788d613abe540a852b",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cls:C-SC/a-sci1": {
+   "comm_id": "17aa40bc96ef",
+   "fonte": "classroom",
+   "tipo": "announcement",
+   "uid": "cls:C-SC/a-sci1",
+   "data": "2026-10-22",
+   "stato": "proposto",
+   "dati": {
+    "data_comunicazione": "2026-10-22",
+    "titolo": null,
+    "testo": "Presentazione stechiometria delle reazioni chimiche",
+    "testo_troncato": false,
+    "corso": {
+     "id": "C-SC",
+     "nome": "SCIENZE 4 (prova)",
+     "confermato": true
+    },
+    "numero": null,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": null
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "M3",
+    "ambito": {
+     "valore": "materia",
+     "stato": "determinato",
+     "regola": "A2",
+     "criterio": "ambito materia determinato: annuncio di un corso Classroom monomateria CONFERMATO"
+    },
+    "materia": {
+     "key": "scienze",
+     "stato": "determinata",
+     "candidati": [
+      "scienze"
+     ],
+     "criterio": "corso monomateria confermato",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": "materiale",
+     "stato": "proposto",
+     "pari_livello": null
+    },
+    "funzioni": [
+     {
+      "funzione": "materiale",
+      "stato": "proposto",
+      "regola": "M3",
+      "motivazione": "materiale proposto: parole di materiale nel testo",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "debole",
+        "dettaglio": "materiale: presentazione"
+       }
+      ]
+     }
+    ],
+    "date": [],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [
+      {
+       "link_id": "5748dbae07ac",
+       "relazione": "stesso_argomento",
+       "stato": "proposto",
+       "regola": "R3",
+       "con": {
+        "sistema": "classeviva",
+        "tipo": "agenda_event",
+        "uid": "cvv:1000103"
+       }
+      }
+     ],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "M5 e' solo evidenza corroborativa: non crea classificazioni e non e' un fatto"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cls:C-SC/a-sci1",
+    "registry_version": 1,
+    "content_hash": "e89d3a8b915e9a3a38404a8a88706d1aab24a30d510e9355926be91e63cf0692",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cls:C-SC/a-sci2": {
+   "comm_id": "87161833fc2b",
+   "fonte": "classroom",
+   "tipo": "announcement",
+   "uid": "cls:C-SC/a-sci2",
+   "data": "2026-10-23",
+   "stato": "probabile",
+   "dati": {
+    "data_comunicazione": "2026-10-23",
+    "titolo": null,
+    "testo": "Per lunedi studiate la stechiometria",
+    "testo_troncato": false,
+    "corso": {
+     "id": "C-SC",
+     "nome": "SCIENZE 4 (prova)",
+     "confermato": true
+    },
+    "numero": null,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": null
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "C1",
+    "ambito": {
+     "valore": "materia",
+     "stato": "determinato",
+     "regola": "A2",
+     "criterio": "ambito materia determinato: annuncio di un corso Classroom monomateria CONFERMATO"
+    },
+    "materia": {
+     "key": "scienze",
+     "stato": "determinata",
+     "candidati": [
+      "scienze"
+     ],
+     "criterio": "corso monomateria confermato",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": "compito",
+     "stato": "probabile",
+     "pari_livello": null
+    },
+    "funzioni": [
+     {
+      "funzione": "compito",
+      "stato": "probabile",
+      "regola": "C1",
+      "motivazione": "compito probabile: parola di compito + data esplicita o riferimento relativo (non risolto)",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "compito: studiate"
+       },
+       {
+        "codice": "S5",
+        "segnale": "riferimento relativo",
+        "esito": "a_favore",
+        "peso": "debole",
+        "dettaglio": "'per lunedi' RILEVATO ma NON risolto in una data"
+       }
+      ]
+     }
+    ],
+    "date": [],
+    "riferimenti_relativi_non_risolti": [
+     "per lunedi"
+    ],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [
+      {
+       "link_id": "b626d634c431",
+       "relazione": "stesso_argomento",
+       "stato": "proposto",
+       "regola": "R3",
+       "con": {
+        "sistema": "classeviva",
+        "tipo": "agenda_event",
+        "uid": "cvv:1000103"
+       }
+      }
+     ],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "M5 e' solo evidenza corroborativa: non crea classificazioni e non e' un fatto"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [
+     "riferimenti relativi rilevati e NON risolti in data: per lunedi"
+    ],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cls:C-SC/a-sci2",
+    "registry_version": 1,
+    "content_hash": "3ae0ea0f2d72d7ba3f243c05df4e0c252eb183a67a008097ea1dfacdeaec2d94",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cls:C-SC/a-two": {
+   "comm_id": "b00340a18f0d",
+   "fonte": "classroom",
+   "tipo": "announcement",
+   "uid": "cls:C-SC/a-two",
+   "data": "2026-10-29",
+   "stato": "probabile",
+   "dati": {
+    "data_comunicazione": "2026-10-29",
+    "titolo": null,
+    "testo": "Progetto e laboratorio di chimica: ricevimento genitori",
+    "testo_troncato": false,
+    "corso": {
+     "id": "C-SC",
+     "nome": "SCIENZE 4 (prova)",
+     "confermato": true
+    },
+    "numero": null,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": null
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "RN2",
+    "ambito": {
+     "valore": "materia",
+     "stato": "determinato",
+     "regola": "A2",
+     "criterio": "ambito materia determinato: annuncio di un corso Classroom monomateria CONFERMATO"
+    },
+    "materia": {
+     "key": "scienze",
+     "stato": "determinata",
+     "candidati": [
+      "scienze"
+     ],
+     "criterio": "corso monomateria confermato",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": null,
+     "stato": "probabile",
+     "pari_livello": [
+      "attivita",
+      "organizzativa"
+     ]
+    },
+    "funzioni": [
+     {
+      "funzione": "attivita",
+      "stato": "probabile",
+      "regola": "G2",
+      "motivazione": "funzione probabile: >=2 parole distinte del lessico",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "forte",
+        "dettaglio": "attivita: laboratorio, progetto"
+       }
+      ]
+     },
+     {
+      "funzione": "organizzativa",
+      "stato": "probabile",
+      "regola": "G2",
+      "motivazione": "funzione probabile: >=2 parole distinte del lessico",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "forte",
+        "dettaglio": "organizzativa: genitori, ricevimento"
+       }
+      ]
+     }
+    ],
+    "date": [],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "nessun collegamento M5 per questa comunicazione"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cls:C-SC/a-two",
+    "registry_version": 1,
+    "content_hash": "b142599181477f269174771909cc18a001fc6abb941823cc337997a69cf21a3c",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cls:C-SF/a-sost": {
+   "data": "2026-10-30",
+   "dati": {
+    "categoria_scuola": null,
+    "corso": {
+     "confermato": true,
+     "id": "C-SF",
+     "nome": "Storia e Filosofia (prova) - 4Z"
+    },
+    "data_comunicazione": "2026-10-30",
+    "materiali": 0,
+    "numero": null,
+    "testo": "Non c'e la professoressa Verdi: sostituzione in classe",
+    "testo_troncato": false,
+    "titolo": null,
+    "validita_nativa": null
+   },
+   "fonte": "classroom",
+   "fonte_record": {
+    "content_hash": "14e2820a7d650574be4843be15704436317ad4211f594b485bb0849aa18df2a0",
+    "first_seen": "2026-11-01T21:21:34+00:00",
+    "registry_version": 1,
+    "source_status": "present",
+    "uid": "cls:C-SF/a-sost"
+   },
+   "freschezza": {
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca",
+    "stato": "senza_lettura"
+   },
+   "interpretazione": {
+    "ambito": {
+     "criterio": "ambito corso: annuncio di un corso condiviso o non confermato; la materia resta da_verificare",
+     "regola": "A3",
+     "stato": "determinato",
+     "valore": "corso"
+    },
+    "classe_principale": {
+     "pari_livello": null,
+     "stato": "probabile",
+     "valore": "organizzativa"
+    },
+    "collegamenti_m5": {
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "nessun collegamento M5 per questa comunicazione",
+     "usato_come_evidenza": false
+    },
+    "conflitti": [],
+    "date": [],
+    "funzioni": [
+     {
+      "funzione": "organizzativa",
+      "motivazione": "funzione probabile: >=2 parole distinte del lessico",
+      "prove": [
+       {
+        "codice": "S4",
+        "dettaglio": "organizzativa: non c'e, sostituzione",
+        "esito": "a_favore",
+        "peso": "forte",
+        "segnale": "parole chiave"
+       }
+      ],
+      "regola": "G2",
+      "stato": "probabile"
+     }
+    ],
+    "informazioni_mancanti": [
+     "materia non determinata: corso condiviso (filosofia/storia): elemento senza topic (gli annunci non hanno topic)"
+    ],
+    "materia": {
+     "candidati": [
+      "filosofia",
+      "storia"
+     ],
+     "criterio": "corso condiviso (filosofia/storia): elemento senza topic (gli annunci non hanno topic)",
+     "key": null,
+     "menzionate_nel_testo": [],
+     "stato": "da_verificare"
+    },
+    "nota": "interpretazione derivata: il record originale non e' stato modificato",
+    "perimetro": {
+     "anno": "2026-27",
+     "classe": "4a classe",
+     "valore": "operativo"
+    },
+    "regola": "G2",
+    "riferimenti_relativi_non_risolti": []
+   },
+   "stato": "probabile",
+   "tipo": "announcement",
+   "uid": "cls:C-SF/a-sost"
+  },
+  "cls:C-X/a-x": {
+   "comm_id": "36538b34ad99",
+   "fonte": "classroom",
+   "tipo": "announcement",
+   "uid": "cls:C-X/a-x",
+   "data": "2026-10-28",
+   "stato": "probabile",
+   "dati": {
+    "data_comunicazione": "2026-10-28",
+    "titolo": null,
+    "testo": "Verifica del 2 novembre 2026",
+    "testo_troncato": false,
+    "corso": {
+     "id": "C-X",
+     "nome": "Arte 4Z",
+     "confermato": false
+    },
+    "numero": null,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": null
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "V1",
+    "ambito": {
+     "valore": "corso",
+     "stato": "determinato",
+     "regola": "A3",
+     "criterio": "ambito corso: annuncio di un corso condiviso o non confermato; la materia resta da_verificare"
+    },
+    "materia": {
+     "key": null,
+     "stato": "da_verificare",
+     "candidati": [],
+     "criterio": "corso Classroom NON confermato in school_manual.json: materia non determinabile",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": "verifica",
+     "stato": "probabile",
+     "pari_livello": null
+    },
+    "funzioni": [
+     {
+      "funzione": "verifica",
+      "stato": "probabile",
+      "regola": "V1",
+      "motivazione": "verifica probabile: parola di verifica + data esplicita attribuita alla verifica",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "verifica: verifica"
+       },
+       {
+        "codice": "S5",
+        "segnale": "data esplicita",
+        "esito": "a_favore",
+        "peso": "forte",
+        "dettaglio": "'2 novembre 2026' (2026-11-02) e' attribuita alla verifica"
+       }
+      ]
+     }
+    ],
+    "date": [
+     {
+      "testo": "2 novembre 2026",
+      "data": "2026-11-02",
+      "ruolo": "verifica",
+      "anno_esplicito": true,
+      "stato": "valida"
+     }
+    ],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "nessun collegamento M5 per questa comunicazione"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [
+     "materia non determinata: corso Classroom NON confermato in school_manual.json: materia non determinabile"
+    ],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cls:C-X/a-x",
+    "registry_version": 1,
+    "content_hash": "d61676eb945b94c20e819e4a6ba24822205d783bbbb34020f8283cf070dae081",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cvv:1001": {
+   "comm_id": "1d10c818482d",
+   "fonte": "classeviva",
+   "tipo": "notice",
+   "uid": "cvv:1001",
+   "data": "2026-10-26",
+   "stato": "probabile",
+   "dati": {
+    "data_comunicazione": "2026-10-26",
+    "titolo": "Corso di lingua - certificazione",
+    "testo": "Corso di lingua - certificazione",
+    "testo_troncato": false,
+    "corso": null,
+    "numero": 119,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": {
+     "dal": null,
+     "al": null,
+     "stato": "valida",
+     "cntValidInRange": true,
+     "criterio": "solo il flag nativo cntValidInRange"
+    }
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "G2",
+    "ambito": {
+     "valore": "generale",
+     "stato": "determinato",
+     "regola": "A1",
+     "criterio": "ambito generale determinato: circolare della bacheca ClasseViva (nessun campo materia/docente/corso nel record)"
+    },
+    "materia": {
+     "key": null,
+     "stato": "da_verificare",
+     "candidati": [],
+     "criterio": "le circolari ClasseViva non hanno campo materia/docente/corso: la materia non e' determinabile",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": "attivita",
+     "stato": "probabile",
+     "pari_livello": null
+    },
+    "funzioni": [
+     {
+      "funzione": "attivita",
+      "stato": "probabile",
+      "regola": "G2",
+      "motivazione": "funzione probabile: >=2 parole distinte del lessico",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "forte",
+        "dettaglio": "attivita: certificazione, corso"
+       }
+      ]
+     }
+    ],
+    "date": [],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "nessun collegamento M5 per questa comunicazione"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cvv:1001",
+    "registry_version": 1,
+    "content_hash": "6ab8e807a3a19e28d4fc196b35fe369587db68d665a5a3d000fc6481c161fbd3",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cvv:1002": {
+   "comm_id": "1753eb615aea",
+   "fonte": "classeviva",
+   "tipo": "notice",
+   "uid": "cvv:1002",
+   "data": "2026-10-23",
+   "stato": "probabile",
+   "dati": {
+    "data_comunicazione": "2026-10-23",
+    "titolo": "Progetto Pallavolo",
+    "testo": "Progetto Pallavolo",
+    "testo_troncato": false,
+    "corso": null,
+    "numero": 117,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": {
+     "dal": null,
+     "al": null,
+     "stato": "valida",
+     "cntValidInRange": true,
+     "criterio": "solo il flag nativo cntValidInRange"
+    }
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "G2",
+    "ambito": {
+     "valore": "generale",
+     "stato": "determinato",
+     "regola": "A1",
+     "criterio": "ambito generale determinato: circolare della bacheca ClasseViva (nessun campo materia/docente/corso nel record)"
+    },
+    "materia": {
+     "key": null,
+     "stato": "da_verificare",
+     "candidati": [],
+     "criterio": "le circolari ClasseViva non hanno campo materia/docente/corso: la materia non e' determinabile",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": "attivita",
+     "stato": "probabile",
+     "pari_livello": null
+    },
+    "funzioni": [
+     {
+      "funzione": "attivita",
+      "stato": "probabile",
+      "regola": "G2",
+      "motivazione": "funzione probabile: >=2 parole distinte del lessico",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "forte",
+        "dettaglio": "attivita: pallavolo, progetto"
+       }
+      ]
+     }
+    ],
+    "date": [],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "nessun collegamento M5 per questa comunicazione"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cvv:1002",
+    "registry_version": 1,
+    "content_hash": "f573c50390e490abd3530bc7c16d9c6afbb15e79d5e3678b30ab210b1db11751",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cvv:1003": {
+   "comm_id": "3f9f1c67c4f7",
+   "fonte": "classeviva",
+   "tipo": "notice",
+   "uid": "cvv:1003",
+   "data": "2026-10-18",
+   "stato": "proposto",
+   "dati": {
+    "data_comunicazione": "2026-10-18",
+    "titolo": "Uscita didattica al museo",
+    "testo": "Uscita didattica al museo",
+    "testo_troncato": false,
+    "corso": null,
+    "numero": 115,
+    "categoria_scuola": null,
+    "materiali": 1,
+    "validita_nativa": {
+     "dal": null,
+     "al": null,
+     "stato": "valida",
+     "cntValidInRange": true,
+     "criterio": "solo il flag nativo cntValidInRange"
+    }
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "G1",
+    "ambito": {
+     "valore": "generale",
+     "stato": "determinato",
+     "regola": "A1",
+     "criterio": "ambito generale determinato: circolare della bacheca ClasseViva (nessun campo materia/docente/corso nel record)"
+    },
+    "materia": {
+     "key": null,
+     "stato": "da_verificare",
+     "candidati": [],
+     "criterio": "le circolari ClasseViva non hanno campo materia/docente/corso: la materia non e' determinabile",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": "attivita",
+     "stato": "proposto",
+     "pari_livello": null
+    },
+    "funzioni": [
+     {
+      "funzione": "attivita",
+      "stato": "proposto",
+      "regola": "G1",
+      "motivazione": "funzione proposta: una parola del lessico",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "attivita: uscita didattica"
+       }
+      ]
+     }
+    ],
+    "date": [],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "nessun collegamento M5 per questa comunicazione"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cvv:1003",
+    "registry_version": 1,
+    "content_hash": "a5180cbb24450bcf00913a585591b9ef196825072b05017fdcd5293a498f8b31",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cvv:1004": {
+   "comm_id": "a81fd4f342b8",
+   "fonte": "classeviva",
+   "tipo": "notice",
+   "uid": "cvv:1004",
+   "data": "2026-10-16",
+   "stato": "probabile",
+   "dati": {
+    "data_comunicazione": "2026-10-16",
+    "titolo": "Ricevimento genitori classi quarte",
+    "testo": "Ricevimento genitori classi quarte",
+    "testo_troncato": false,
+    "corso": null,
+    "numero": 114,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": {
+     "dal": null,
+     "al": null,
+     "stato": "valida",
+     "cntValidInRange": true,
+     "criterio": "solo il flag nativo cntValidInRange"
+    }
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "G2",
+    "ambito": {
+     "valore": "generale",
+     "stato": "determinato",
+     "regola": "A1",
+     "criterio": "ambito generale determinato: circolare della bacheca ClasseViva (nessun campo materia/docente/corso nel record)"
+    },
+    "materia": {
+     "key": null,
+     "stato": "da_verificare",
+     "candidati": [],
+     "criterio": "le circolari ClasseViva non hanno campo materia/docente/corso: la materia non e' determinabile",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": "organizzativa",
+     "stato": "probabile",
+     "pari_livello": null
+    },
+    "funzioni": [
+     {
+      "funzione": "organizzativa",
+      "stato": "probabile",
+      "regola": "G2",
+      "motivazione": "funzione probabile: >=2 parole distinte del lessico",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "forte",
+        "dettaglio": "organizzativa: genitori, ricevimento"
+       }
+      ]
+     }
+    ],
+    "date": [],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "nessun collegamento M5 per questa comunicazione"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cvv:1004",
+    "registry_version": 1,
+    "content_hash": "dbff80da18ad21ddbfbcf8b4cd3f164c4df7a8e02d6873329053d6cc80a7275d",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cvv:1005": {
+   "comm_id": "26b3aabf4d01",
+   "fonte": "classeviva",
+   "tipo": "notice",
+   "uid": "cvv:1005",
+   "data": "2026-10-08",
+   "stato": "non_determinabile",
+   "dati": {
+    "data_comunicazione": "2026-10-08",
+    "titolo": "Associazione culturale",
+    "testo": "Associazione culturale",
+    "testo_troncato": false,
+    "corso": null,
+    "numero": 112,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": {
+     "dal": null,
+     "al": null,
+     "stato": "valida",
+     "cntValidInRange": true,
+     "criterio": "solo il flag nativo cntValidInRange"
+    }
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "RN1",
+    "ambito": {
+     "valore": "generale",
+     "stato": "determinato",
+     "regola": "A1",
+     "criterio": "ambito generale determinato: circolare della bacheca ClasseViva (nessun campo materia/docente/corso nel record)"
+    },
+    "materia": {
+     "key": null,
+     "stato": "da_verificare",
+     "candidati": [],
+     "criterio": "le circolari ClasseViva non hanno campo materia/docente/corso: la materia non e' determinabile",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": null,
+     "stato": "non_determinabile",
+     "pari_livello": null
+    },
+    "funzioni": [],
+    "date": [],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "nessun collegamento M5 per questa comunicazione"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [
+     "nessun indizio nel testo: nessuna classe determinabile (e' il risultato prudente)"
+    ],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cvv:1005",
+    "registry_version": 1,
+    "content_hash": "4b2cb25e270c5a68efe95b86a033203984dd274895b74955c53664c81bd42c06",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cvv:1006": {
+   "comm_id": "e3105b2406c5",
+   "fonte": "classeviva",
+   "tipo": "notice",
+   "uid": "cvv:1006",
+   "data": "2026-09-29",
+   "stato": "proposto",
+   "dati": {
+    "data_comunicazione": "2026-09-29",
+    "titolo": "Avvisi di inizio anno",
+    "testo": "Avvisi di inizio anno",
+    "testo_troncato": false,
+    "corso": null,
+    "numero": 104,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": {
+     "dal": null,
+     "al": "2026-10-28",
+     "stato": "scaduta",
+     "cntValidInRange": false,
+     "criterio": "date di validita' native confrontate con la data locale di riferimento (2026-11-01)"
+    }
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "G1",
+    "ambito": {
+     "valore": "generale",
+     "stato": "determinato",
+     "regola": "A1",
+     "criterio": "ambito generale determinato: circolare della bacheca ClasseViva (nessun campo materia/docente/corso nel record)"
+    },
+    "materia": {
+     "key": null,
+     "stato": "da_verificare",
+     "candidati": [],
+     "criterio": "le circolari ClasseViva non hanno campo materia/docente/corso: la materia non e' determinabile",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": "avviso",
+     "stato": "proposto",
+     "pari_livello": null
+    },
+    "funzioni": [
+     {
+      "funzione": "avviso",
+      "stato": "proposto",
+      "regola": "G1",
+      "motivazione": "funzione proposta: una parola del lessico",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "avviso: avvisi"
+       }
+      ]
+     }
+    ],
+    "date": [],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "nessun collegamento M5 per questa comunicazione"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cvv:1006",
+    "registry_version": 1,
+    "content_hash": "e6470d19eccb43259199607f9e7b53d38467fbe67622d93bbb99201e89ecf2b5",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cvv:1007": {
+   "comm_id": "452d367218cf",
+   "fonte": "classeviva",
+   "tipo": "notice",
+   "uid": "cvv:1007",
+   "data": "2026-10-29",
+   "stato": "proposto",
+   "dati": {
+    "data_comunicazione": "2026-10-29",
+    "titolo": "Verifica di recupero del 9 novembre 2026 per le classi quarte",
+    "testo": "Verifica di recupero del 9 novembre 2026 per le classi quarte",
+    "testo_troncato": false,
+    "corso": null,
+    "numero": 121,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": {
+     "dal": null,
+     "al": null,
+     "stato": "valida",
+     "cntValidInRange": true,
+     "criterio": "solo il flag nativo cntValidInRange"
+    }
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "RN2",
+    "ambito": {
+     "valore": "generale",
+     "stato": "determinato",
+     "regola": "A1",
+     "criterio": "ambito generale determinato: circolare della bacheca ClasseViva (nessun campo materia/docente/corso nel record)"
+    },
+    "materia": {
+     "key": null,
+     "stato": "da_verificare",
+     "candidati": [],
+     "criterio": "le circolari ClasseViva non hanno campo materia/docente/corso: la materia non e' determinabile",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": null,
+     "stato": "proposto",
+     "pari_livello": [
+      "verifica",
+      "attivita"
+     ]
+    },
+    "funzioni": [
+     {
+      "funzione": "verifica",
+      "stato": "proposto",
+      "regola": "V2",
+      "motivazione": "verifica proposta: solo parola di verifica (nessuna data attribuita)",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "verifica: verifica"
+       }
+      ]
+     },
+     {
+      "funzione": "attivita",
+      "stato": "proposto",
+      "regola": "G1",
+      "motivazione": "funzione proposta: una parola del lessico",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "attivita: recupero"
+       }
+      ]
+     }
+    ],
+    "date": [
+     {
+      "testo": "9 novembre 2026",
+      "data": "2026-11-09",
+      "ruolo": "non_attribuita",
+      "anno_esplicito": true,
+      "stato": "valida"
+     }
+    ],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "nessun collegamento M5 per questa comunicazione"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cvv:1007",
+    "registry_version": 1,
+    "content_hash": "b0c65e26b16166104f835ad3f6c8b0705d96e98812c811a822409bfe7a9142e2",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cvv:1008": {
+   "comm_id": "7178b2749d84",
+   "fonte": "classeviva",
+   "tipo": "notice",
+   "uid": "cvv:1008",
+   "data": "2026-10-30",
+   "stato": "proposto",
+   "dati": {
+    "data_comunicazione": "2026-10-30",
+    "titolo": "Verifica annullata: sciopero del 9 novembre 2026",
+    "testo": "Verifica annullata: sciopero del 9 novembre 2026",
+    "testo_troncato": false,
+    "corso": null,
+    "numero": 122,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": {
+     "dal": null,
+     "al": null,
+     "stato": "valida",
+     "cntValidInRange": true,
+     "criterio": "solo il flag nativo cntValidInRange"
+    }
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "RN2",
+    "ambito": {
+     "valore": "generale",
+     "stato": "determinato",
+     "regola": "A1",
+     "criterio": "ambito generale determinato: circolare della bacheca ClasseViva (nessun campo materia/docente/corso nel record)"
+    },
+    "materia": {
+     "key": null,
+     "stato": "da_verificare",
+     "candidati": [],
+     "criterio": "le circolari ClasseViva non hanno campo materia/docente/corso: la materia non e' determinabile",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": null,
+     "stato": "proposto",
+     "pari_livello": [
+      "verifica",
+      "organizzativa"
+     ]
+    },
+    "funzioni": [
+     {
+      "funzione": "verifica",
+      "stato": "proposto",
+      "regola": "V3",
+      "motivazione": "verifica proposta (tetto): parola di verifica con variazione/negazione (annullata, rinviata, nessuna verifica...)",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "verifica: verifica"
+       },
+       {
+        "codice": "S9",
+        "segnale": "variazione/negazione",
+        "esito": "contro",
+        "peso": "media",
+        "dettaglio": "parole di variazione: annullata"
+       }
+      ]
+     },
+     {
+      "funzione": "organizzativa",
+      "stato": "proposto",
+      "regola": "G1",
+      "motivazione": "funzione proposta: una parola del lessico",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "organizzativa: sciopero"
+       }
+      ]
+     }
+    ],
+    "date": [
+     {
+      "testo": "9 novembre 2026",
+      "data": "2026-11-09",
+      "ruolo": "non_attribuita",
+      "anno_esplicito": true,
+      "stato": "valida"
+     }
+    ],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "nessun collegamento M5 per questa comunicazione"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cvv:1008",
+    "registry_version": 1,
+    "content_hash": "036886250357afb9ee84927858a2933f7637b6b6839ce276d170d92b8b0d1d82",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cvv:1009": {
+   "comm_id": "cfa1db21313a",
+   "fonte": "classeviva",
+   "tipo": "notice",
+   "uid": "cvv:1009",
+   "data": "2026-10-31",
+   "stato": "conflitto",
+   "dati": {
+    "data_comunicazione": "2026-10-31",
+    "titolo": "Pomeriggi di studio - Verifica del 11 novembre e verifica del 12 novembre",
+    "testo": "Pomeriggi di studio - Verifica del 11 novembre e verifica del 12 novembre",
+    "testo_troncato": false,
+    "corso": null,
+    "numero": 123,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": {
+     "dal": null,
+     "al": null,
+     "stato": "valida",
+     "cntValidInRange": true,
+     "criterio": "solo il flag nativo cntValidInRange"
+    }
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "RC2",
+    "ambito": {
+     "valore": "generale",
+     "stato": "determinato",
+     "regola": "A1",
+     "criterio": "ambito generale determinato: circolare della bacheca ClasseViva (nessun campo materia/docente/corso nel record)"
+    },
+    "materia": {
+     "key": null,
+     "stato": "da_verificare",
+     "candidati": [],
+     "criterio": "le circolari ClasseViva non hanno campo materia/docente/corso: la materia non e' determinabile",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": "attivita",
+     "stato": "proposto",
+     "pari_livello": null
+    },
+    "funzioni": [
+     {
+      "funzione": "verifica",
+      "stato": "conflitto",
+      "regola": "RC2",
+      "motivazione": "date diverse attribuite alla verifica nello stesso testo: 2026-11-11, 2026-11-12 (nessuna scelta)",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "verifica: verifica"
+       },
+       {
+        "codice": "S5",
+        "segnale": "data esplicita",
+        "esito": "a_favore",
+        "peso": "forte",
+        "dettaglio": "'11 novembre' (2026-11-11, anno dedotto dall'anno scolastico) e' attribuita alla verifica"
+       },
+       {
+        "codice": "S5",
+        "segnale": "data esplicita",
+        "esito": "a_favore",
+        "peso": "forte",
+        "dettaglio": "'12 novembre' (2026-11-12, anno dedotto dall'anno scolastico) e' attribuita alla verifica"
+       },
+       {
+        "codice": "S5",
+        "segnale": "data esplicita",
+        "esito": "contro",
+        "peso": "forte",
+        "dettaglio": "date diverse attribuite alla verifica: 2026-11-11, 2026-11-12"
+       }
+      ]
+     },
+     {
+      "funzione": "attivita",
+      "stato": "proposto",
+      "regola": "G1",
+      "motivazione": "funzione proposta: una parola del lessico",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "attivita: pomeriggi di studio"
+       }
+      ]
+     }
+    ],
+    "date": [
+     {
+      "testo": "11 novembre",
+      "data": "2026-11-11",
+      "ruolo": "verifica",
+      "anno_esplicito": false,
+      "stato": "valida"
+     },
+     {
+      "testo": "12 novembre",
+      "data": "2026-11-12",
+      "ruolo": "verifica",
+      "anno_esplicito": false,
+      "stato": "valida"
+     }
+    ],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "nessun collegamento M5 per questa comunicazione"
+    },
+    "conflitti": [
+     {
+      "tipo": "date_discordanti",
+      "regola": "RC2",
+      "funzione": "verifica",
+      "motivazione": "date diverse attribuite alla verifica nello stesso testo: 2026-11-11, 2026-11-12 (nessuna scelta)",
+      "valori": [
+       "2026-11-11",
+       "2026-11-12"
+      ]
+     }
+    ],
+    "informazioni_mancanti": [],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cvv:1009",
+    "registry_version": 1,
+    "content_hash": "8d0fb13d5ea1da05f1e339eda56a9c5645f10bdac90861f2c80aaadc20b49aab",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cvv:1010": {
+   "comm_id": "cade27d5ba7e",
+   "fonte": "classeviva",
+   "tipo": "notice",
+   "uid": "cvv:1010",
+   "data": "2025-04-02",
+   "stato": "non_determinabile",
+   "dati": {
+    "data_comunicazione": "2025-04-02",
+    "titolo": "Circolare vecchia anno scorso: gita",
+    "testo": "Circolare vecchia anno scorso: gita",
+    "testo_troncato": false,
+    "corso": null,
+    "numero": 103,
+    "categoria_scuola": null,
+    "materiali": 0,
+    "validita_nativa": {
+     "dal": null,
+     "al": null,
+     "stato": "valida",
+     "cntValidInRange": true,
+     "criterio": "solo il flag nativo cntValidInRange"
+    }
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "RN1",
+    "ambito": {
+     "valore": "generale",
+     "stato": "determinato",
+     "regola": "A1",
+     "criterio": "ambito generale determinato: circolare della bacheca ClasseViva (nessun campo materia/docente/corso nel record)"
+    },
+    "materia": {
+     "key": null,
+     "stato": "da_verificare",
+     "candidati": [],
+     "criterio": "le circolari ClasseViva non hanno campo materia/docente/corso: la materia non e' determinabile",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": null,
+     "stato": "non_determinabile",
+     "pari_livello": null
+    },
+    "funzioni": [],
+    "date": [],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "storico",
+     "anno": "2024-25",
+     "classe": null
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "nessun collegamento M5 per questa comunicazione"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [
+     "nessun indizio nel testo: nessuna classe determinabile (e' il risultato prudente)"
+    ],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cvv:1010",
+    "registry_version": 1,
+    "content_hash": "57dbc2e1449a9af0340aa81d84f939fa9e96c872c53e41489df2db4fbe704449",
+    "source_status": "present",
+    "first_seen": "2026-12-13T10:17:33+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cvv:1011": {
+   "comm_id": "aa0ceb8afbb2",
+   "fonte": "classeviva",
+   "tipo": "notice",
+   "uid": "cvv:1011",
+   "data": "2026-10-20",
+   "stato": "proposto",
+   "dati": {
+    "data_comunicazione": "2026-10-20",
+    "titolo": "Assemblea degli studenti",
+    "testo": "Assemblea degli studenti",
+    "testo_troncato": false,
+    "corso": null,
+    "numero": 118,
+    "categoria_scuola": "Organizzazione",
+    "materiali": 0,
+    "validita_nativa": {
+     "dal": null,
+     "al": null,
+     "stato": "valida",
+     "cntValidInRange": true,
+     "criterio": "solo il flag nativo cntValidInRange"
+    }
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "G1",
+    "ambito": {
+     "valore": "generale",
+     "stato": "determinato",
+     "regola": "A1",
+     "criterio": "ambito generale determinato: circolare della bacheca ClasseViva (nessun campo materia/docente/corso nel record)"
+    },
+    "materia": {
+     "key": null,
+     "stato": "da_verificare",
+     "candidati": [],
+     "criterio": "le circolari ClasseViva non hanno campo materia/docente/corso: la materia non e' determinabile",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": "organizzativa",
+     "stato": "proposto",
+     "pari_livello": null
+    },
+    "funzioni": [
+     {
+      "funzione": "organizzativa",
+      "stato": "proposto",
+      "regola": "G1",
+      "motivazione": "funzione proposta: una parola del lessico",
+      "prove": [
+       {
+        "codice": "S4",
+        "segnale": "parole chiave",
+        "esito": "a_favore",
+        "peso": "media",
+        "dettaglio": "organizzativa: assemblea"
+       }
+      ]
+     }
+    ],
+    "date": [],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "nessun collegamento M5 per questa comunicazione"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cvv:1011",
+    "registry_version": 1,
+    "content_hash": "ee83a0ee5afd5ea1963576dac7e705b186e58409917237799e59326da1816e7c",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  },
+  "cvv:1012": {
+   "comm_id": "f4fac72f42e1",
+   "fonte": "classeviva",
+   "tipo": "notice",
+   "uid": "cvv:1012",
+   "data": "2026-10-30",
+   "stato": "non_determinabile",
+   "dati": {
+    "data_comunicazione": "2026-10-30",
+    "titolo": "Documento",
+    "testo": "Documento",
+    "testo_troncato": false,
+    "corso": null,
+    "numero": 124,
+    "categoria_scuola": null,
+    "materiali": 1,
+    "validita_nativa": {
+     "dal": null,
+     "al": null,
+     "stato": "valida",
+     "cntValidInRange": true,
+     "criterio": "solo il flag nativo cntValidInRange"
+    }
+   },
+   "interpretazione": {
+    "comm_version": "r2-e58ece",
+    "regola": "RN1",
+    "ambito": {
+     "valore": "generale",
+     "stato": "determinato",
+     "regola": "A1",
+     "criterio": "ambito generale determinato: circolare della bacheca ClasseViva (nessun campo materia/docente/corso nel record)"
+    },
+    "materia": {
+     "key": null,
+     "stato": "da_verificare",
+     "candidati": [],
+     "criterio": "le circolari ClasseViva non hanno campo materia/docente/corso: la materia non e' determinabile",
+     "menzionate_nel_testo": []
+    },
+    "classe_principale": {
+     "valore": null,
+     "stato": "non_determinabile",
+     "pari_livello": null
+    },
+    "funzioni": [],
+    "date": [],
+    "riferimenti_relativi_non_risolti": [],
+    "perimetro": {
+     "valore": "operativo",
+     "anno": "2026-27",
+     "classe": "4a classe"
+    },
+    "collegamenti_m5": {
+     "usato_come_evidenza": false,
+     "collegamenti": [],
+     "conflitti": [],
+     "non_determinabili": 0,
+     "nota": "nessun collegamento M5 per questa comunicazione"
+    },
+    "conflitti": [],
+    "informazioni_mancanti": [
+     "nessun indizio nel testo: nessuna classe determinabile (e' il risultato prudente)"
+    ],
+    "nota": "interpretazione derivata: il record originale non e' stato modificato"
+   },
+   "fonte_record": {
+    "uid": "cvv:1012",
+    "registry_version": 1,
+    "content_hash": "eadccba8eef0380ec9a7b3bc99ed664e8e1899036a2dd168f8ae97c40f9e4d76",
+    "source_status": "present",
+    "first_seen": "2026-11-15T13:33:28+00:00"
+   },
+   "freschezza": {
+    "stato": "senza_lettura",
+    "nota": "'aggiornato' = l'ultima lettura riuscita e' entro la soglia: NON garantisce che il dato sia corretto o completo; 'legacy' = run precedenti a M3 (senza fine/durata): la verifica e' meno ricca"
+   }
+  }
+ },
+ "nota": "golden M6 r1 generato PRIMA della modifica r2 (ASSENZA_DOCENTE); per ogni comunicazione delle fixture: classificazione completa senza comm_id/comm_version (dipendono dalla versione)"
+}

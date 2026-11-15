@@ -1,0 +1,82 @@
+{
+  "schema": "cloud-finance-rules/1",
+  "note": "Regole di esempio su dati SINTETICI. Non derivano da dati reali.",
+  "categories": [
+    { "id": "entrate", "name": "Entrate", "parent": null, "budget_group": null },
+    { "id": "stipendio", "name": "Stipendio", "parent": "entrate", "budget_group": null },
+    { "id": "spesa-alimentare", "name": "Spesa alimentare", "parent": null, "budget_group": "needs" },
+    { "id": "bar-ristoranti", "name": "Bar e ristoranti", "parent": null, "budget_group": "wants" },
+    { "id": "abbonamenti", "name": "Abbonamenti", "parent": null, "budget_group": "wants" },
+    { "id": "libri", "name": "Libri", "parent": null, "budget_group": "wants" },
+    { "id": "commissioni-bancarie", "name": "Commissioni bancarie", "parent": null, "budget_group": "needs" }
+  ],
+  "rules": [
+    {
+      "id": "stipendio",
+      "priority": 100,
+      "description": "Accredito dello stipendio",
+      "when": {
+        "all": [
+          { "field": "description", "op": "contains", "value": "stipendio" },
+          { "field": "direction", "op": "equals", "value": "in" }
+        ]
+      },
+      "assign": { "kind": "income", "category": "stipendio", "confidence": "high" }
+    },
+    {
+      "id": "supermercato",
+      "priority": 50,
+      "description": "Controparte supermercato",
+      "when": {
+        "all": [
+          { "field": "counterparty", "op": "contains", "value": "supermercato" },
+          { "field": "direction", "op": "equals", "value": "out" }
+        ]
+      },
+      "assign": { "kind": "expense", "category": "spesa-alimentare", "confidence": "high" }
+    },
+    {
+      "id": "caffe",
+      "priority": 50,
+      "description": "Descrizione 'caffe': probabile bar, da confermare",
+      "when": { "all": [{ "field": "description", "op": "equals", "value": "caffe" }] },
+      "assign": { "kind": "expense", "category": "bar-ristoranti", "confidence": "low" }
+    },
+    {
+      "id": "abbonamento",
+      "priority": 50,
+      "description": "Abbonamenti ricorrenti",
+      "when": {
+        "all": [
+          { "field": "description", "op": "contains", "value": "abbonamento" },
+          { "field": "direction", "op": "equals", "value": "out" }
+        ]
+      },
+      "assign": { "kind": "expense", "category": "abbonamenti", "confidence": "high" }
+    },
+    {
+      "id": "commissione",
+      "priority": 60,
+      "description": "Commissioni bancarie",
+      "when": {
+        "all": [
+          { "field": "description", "op": "starts_with", "value": "commissione" },
+          { "field": "direction", "op": "equals", "value": "out" }
+        ]
+      },
+      "assign": { "kind": "fee", "category": "commissioni-bancarie", "confidence": "high" }
+    },
+    {
+      "id": "libreria",
+      "priority": 50,
+      "description": "Acquisti in libreria",
+      "when": {
+        "all": [
+          { "field": "description", "op": "contains", "value": "libreria" },
+          { "field": "direction", "op": "equals", "value": "out" }
+        ]
+      },
+      "assign": { "kind": "expense", "category": "libri", "confidence": "high" }
+    }
+  ]
+}

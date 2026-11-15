@@ -1,0 +1,43 @@
+// Vetrina CUORE — SOLO LOCALE, accesso SIMULATO (src/locale.ts). Da usare unicamente con
+//   npm run dev   (= WRANGLER_SEND_METRICS=false CLOUDFLARE_CF_FETCH_ENABLED=false wrangler dev -c wrangler.locale.jsonc --local --ip 127.0.0.1)
+// Non va mai pubblicata: nessun indirizzo pubblico (workers_dev false) e l'ingresso risponde solo a localhost.
+{
+  "$schema": "../finance/node_modules/wrangler/config-schema.json",
+  "name": "cuore-locale-non-pubblicare",
+  "main": "src/locale.ts",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": false,
+  "preview_urls": false,
+  "observability": { "enabled": false },
+  "rules": [
+    { "type": "Text", "globs": ["**/*.html", "**/*.csv", "**/app/sw.js", "**/app/push.js", "**/*.webmanifest"], "fallthrough": true },
+    { "type": "Data", "globs": ["**/app/icons/*.png"], "fallthrough": true }
+  ],
+  "durable_objects": {
+    "bindings": [
+      { "name": "FINANCE", "class_name": "FinanceVetrina" },
+      { "name": "SCHOOL", "class_name": "SchoolFeed" }
+    ]
+  },
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["FinanceVetrina"] },
+    { "tag": "v2", "new_sqlite_classes": ["SchoolFeed"] }
+  ],
+  // Cron in UTC (limite dell'account): il primo e' quello storico delle automazioni; gli altri due servono ai
+  // promemoria delle 07:15, 15:00 e 19:00 ora italiana, un orario per l'ora solare e uno per l'ora legale
+  // (src/automazioni.ts, promemoriaMoment: l'orario della stagione sbagliata non fa nulla). 19:00 d'estate = 17:00 UTC.
+  "triggers": { "crons": ["0 5,11,17,21 * * *", "15 5,6 * * *", "0 13,14,18 * * *", "0 9,10,18,19 * * *"] },
+  // L1: bucket R2 SIMULATO da wrangler dev --local (nessuna risorsa remota); i backup partono solo con le chiavi di prova
+  "r2_buckets": [{ "binding": "BACKUP", "bucket_name": "cuore-backup-locale-non-pubblicare" }],
+  // CATTURA_TOKEN_SHA256: impronta SHA-256 del token di PROVA "cattura-locale-di-prova-0001" (solo locale, mai un
+  // segreto reale). Il Comando Rapido locale manderebbe "Authorization: Bearer cattura-locale-di-prova-0001".
+  "vars": {
+    "CUORE_STATO": "attivo",
+    "CUORE_SCRITTURE": "attive",
+    "CATTURA_TOKEN_SHA256": "c9be647e9676413d7bfef55ff24d9c97cd77187e71d3bf555b7438d7f6573cf0",
+    // Client ID FITTIZIO del token di servizio del Mac simulato in src/locale.ts (SIMULATED_SERVICE): solo locale.
+    "ACCESS_SERVIZIO_SCHOOL": "macschoolsimulato0001.access",
+    // Client ID FITTIZIO del token `mac-backup` simulato (SIMULATED_BACKUP_SERVICE in src/locale.ts): solo locale.
+    "ACCESS_SERVIZIO_BACKUP": "macbackupsimulato0001.access"
+  }
+}

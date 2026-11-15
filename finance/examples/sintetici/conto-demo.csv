@@ -1,0 +1,9 @@
+transaction_id,transaction_date,booking_date,status,amount,currency,description,counterparty,original_amount,original_currency
+,2026-01-02,2026-01-02,booked,1200.00,EUR,Stipendio DEMO,Azienda Esempio Srl,,
+,2026-01-03,2026-01-04,booked,-45.20,EUR,Spesa supermercato,Supermercato Esempio,,
+,2026-01-05,2026-01-05,booked,-3.50,EUR,Caffe,Bar Esempio,,
+,2026-01-05,2026-01-05,booked,-3.50,EUR,Caffe,Bar Esempio,,
+,2026-01-07,2026-01-08,booked,-200.00,EUR,Trasferimento verso carta,,,
+,2026-01-10,2026-01-11,booked,-12.99,EUR,Abbonamento musica DEMO,Servizio Streaming Esempio,,
+,2026-01-12,2026-01-13,booked,-1.00,EUR,Commissione bonifico,Banca Esempio,,
+,2026-01-15,,pending,-25.00,EUR,Ristorante Esempio,Ristorante Esempio,,

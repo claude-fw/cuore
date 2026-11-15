@@ -1,0 +1,20 @@
+{
+  "name": "cuore-cloud",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Vetrina CUORE su Cloudflare (fase C1): Worker, verifica del token di Cloudflare Access, Durable Object con dati sintetici. Nessuna dipendenza propria: usa gli strumenti gia' installati in ../finance.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test \"test/**/*.test.ts\"",
+    "typecheck": "../finance/node_modules/.bin/tsc -p tsconfig.json",
+    "lint": "../finance/node_modules/.bin/biome check --config-path=../finance src test scripts package.json tsconfig.json",
+    "pacchetto": "node scripts/pacchetto.ts",
+    "configurazione": "node scripts/controlla-configurazione.ts",
+    "migrazione": "node scripts/migra-finance.ts",
+    "misure": "node scripts/misura-banco.ts",
+    "ritira-backup": "node scripts/ritira-backup.ts",
+    "chiavi-mac": "node scripts/chiavi-mac.ts",
+    "vapid": "node scripts/vapid.ts",
+    "dev": "WRANGLER_SEND_METRICS=false CLOUDFLARE_CF_FETCH_ENABLED=false ../finance/node_modules/.bin/wrangler dev -c wrangler.locale.jsonc --local --ip 127.0.0.1"
+  }
+}

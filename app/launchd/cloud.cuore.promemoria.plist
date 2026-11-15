@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  ESEMPIO, NON caricato. Promemoria di CUORE sul Mac (app/bridge/promemoria.py esegui). Resta SPENTO finche' non esiste
+  ~/Library/Application Support/CUORE/promemoria.json con "attivo": true (modello: promemoria.esempio.json).
+  Accensione e spegnimento: con launchctl (load/unload), a mano.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>cloud.cuore.promemoria</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>-B</string>
+    <string>/Users/TUO-UTENTE/Developer/cuore/app/bridge/promemoria.py</string>
+    <string>esegui</string>
+  </array>
+  <!-- Mattina 07:15 (dopo il giro School delle 06:45), pomeriggio 15:00 (dopo quello delle 14:30), sera 19:00 (spese in
+       contanti, impegni di domani). Gli stessi orari sono in promemoria.py (MOMENTI): cambiarli in tutti e due. Un
+       orario perso con il Mac in stop viene eseguito al risveglio; i promemoria gia' mostrati non si ripetono. -->
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict><key>Hour</key><integer>7</integer><key>Minute</key><integer>15</integer></dict>
+    <dict><key>Hour</key><integer>15</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Hour</key><integer>19</integer><key>Minute</key><integer>0</integer></dict>
+  </array>
+  <key>RunAtLoad</key>
+  <false/>
+  <key>ProcessType</key>
+  <string>Background</string>
+  <key>LowPriorityIO</key>
+  <true/>
+  <key>Nice</key>
+  <integer>10</integer>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>PYTHONIOENCODING</key>
+    <string>utf-8</string>
+    <key>LANG</key>
+    <string>it_IT.UTF-8</string>
+  </dict>
+  <key>StandardOutPath</key>
+  <string>/dev/null</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/TUO-UTENTE/Library/Logs/Cloud/cuore-promemoria.err.log</string>
+</dict>
+</plist>

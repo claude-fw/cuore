@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>CUORE Money · copia offline</title>
+<style>
+  :root { color-scheme: light dark; --bg: #f6f5f2; --card: #fff; --ink: #1d1d1f; --muted: #6e6e73; --line: #e3e1dc; --warn: #8a5a00; --warn-bg: #fff3d6; --bad: #a12622; --good: #1d6b3a; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #151516; --card: #1f1f21; --ink: #f2f2f2; --muted: #a1a1a6; --line: #333336; --warn: #ffcf70; --warn-bg: #3a2c0c; --bad: #ff8a80; --good: #7fd69b; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 16px; }
+  .banner { background: var(--warn-bg); color: var(--warn); border: 1px solid var(--warn); border-radius: 12px; padding: 12px 14px; margin-bottom: 16px; }
+  .banner b { display: block; letter-spacing: .04em; }
+  h1 { font-size: 22px; margin: 6px 0 14px; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; margin-bottom: 12px; }
+  h2 { font-size: 15px; margin: 0 0 8px; }
+  .row { display: flex; justify-content: space-between; gap: 12px; padding: 5px 0; border-top: 1px solid var(--line); }
+  .row:first-of-type { border-top: 0; }
+  .row span:last-child { font-variant-numeric: tabular-nums; text-align: right; }
+  .note { color: var(--muted); font-size: 13px; margin: 6px 0 0; }
+  .na { color: var(--bad); }
+  ul { margin: 6px 0 0; padding-left: 18px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="banner" role="note"><b>COPIA OFFLINE · NON AGGIORNATA</b><span id="banner"></span></div>
+  <h1>CUORE Money</h1>
+  <div id="view"></div>
+</main>
+<script type="application/json" id="cuore-offline">__CUORE_OFFLINE_JSON__</script>
+<script>
+"use strict";
+const P = JSON.parse(document.getElementById("cuore-offline").textContent);
+const view = document.getElementById("view");
+const el = (tag, text, cls) => { const e = document.createElement(tag); if (text != null) e.textContent = text; if (cls) e.className = cls; return e; };
+const cur = (minor, c) => minor == null ? "mancante" : new Intl.NumberFormat("it-IT", { style: "currency", currency: c || "EUR" }).format(minor / 100);
+const when = iso => iso ? new Date(iso).toLocaleString("it-IT", { dateStyle: "medium", timeStyle: "short" }) : "non disponibile";
+const day = d => d ? new Date(d + "T12:00:00Z").toLocaleDateString("it-IT", { day: "numeric", month: "short", year: "numeric" }) : null;
+const READ = { completo: "lettura completa", parziale: "lettura parziale (alcune sezioni non disponibili)", non_disponibile: "lettura non riuscita" };
+const FRESH = { ok: "dati aggiornati al momento della copia", dati_vecchi: "dati GIÀ NON AGGIORNATI al momento della copia", nessun_dato: "nessun dato registrato", non_disponibile: "aggiornamento non disponibile" };
+const LABEL = { needs: "Necessità", wants: "Desideri", savings: "Risparmio", unassigned: "Senza gruppo", idea: "idee", planned: "pianificati", purchased: "acquistati", cancelled: "annullati" };
+function section(title, rows, note, none) {
+  const s = el("section"); s.appendChild(el("h2", title));
+  if (rows === null) s.appendChild(el("p", "Non disponibile: la fonte non ha risposto al momento della copia.", "na"));
+  else if (!rows.length) s.appendChild(el("p", none || "Nessun elemento (zero) al momento della copia.", "note"));
+  else for (const [k, v] of rows) { const r = el("div", null, "row"); r.appendChild(el("span", k)); r.appendChild(el("span", v)); s.appendChild(r); }
+  if (note) s.appendChild(el("p", note, "note"));
+  view.appendChild(s);
+}
+const m = P.money || {}, agg = m.aggiornamento || {};
+document.getElementById("banner").textContent = ` Creata ${when(P.creato_il)} · dati letti ${when(P.origine && P.origine.letto_il)} · ultimo movimento contabilizzato ${day(agg.ultimo_movimento) || (agg.stato === "non_disponibile" ? "non disponibile" : "nessuno")} · ${READ[P.stato.money] || P.stato.money} · ${FRESH[agg.stato] || "aggiornamento non disponibile"}. Per i dati attuali usa CUORE sul Mac.`;
+if (P.schema !== "cuore.offline/1") view.appendChild(el("p", "Formato della copia non riconosciuto: nessun dato mostrato.", "na"));
+else {
+  section("Saldi osservati (totale per valuta)", m.saldi_totali && m.saldi_totali.map(t => [t.currency + (t.complete ? "" : " · parziale"), cur(t.observedSumMinor, t.currency)]));
+  section("Mese corrente", m.flussi_del_mese && m.flussi_del_mese.flatMap(c => [[c.currency + " · entrate", cur(c.entrateMinor, c.currency)], [c.currency + " · spesa reale", cur(c.spesaRealeMinor, c.currency)], [c.currency + " · da classificare", String(c.daClassificare)]]),
+    m.mese ? `Periodo ${day(m.mese.from)} → ${day(m.mese.to)}` : null);
+  section("Spesa per gruppo di budget", m.budget && m.budget.flatMap(c => Object.entries(c.spendingByBudgetGroup || {}).map(([k, v]) => [`${c.currency} · ${LABEL[k] || k}`, `${cur(v, c.currency)} · ${Math.round((c.budgetSharesBp || {})[k] / 100)}%`])),
+    m.budget && m.budget.some(c => c.unclassifiedCount) ? "Incompleto: alcuni movimenti non sono ancora classificati." : null);
+  section("Spesa per categoria", m.budget && m.budget.flatMap(c => Object.entries(c.spendingByCategory || {}).map(([k, v]) => [`${c.currency} · ${(m.nomi_categorie || {})[k] || k.replace(/[-_]/g, " ")}`, cur(v, c.currency)])));
+  section("Obiettivi", m.obiettivi && m.obiettivi.map(g => [g.name, `${cur(g.allocatedMinor, g.currency)} di ${cur(g.targetMinor, g.currency)} · ${Math.round(g.progressBp / 100)}%${g.deadline ? " · entro " + day(g.deadline) : " · scadenza mancante"}`]));
+  section("Acquisti pianificati (conteggi)", m.acquisti && Object.entries(m.acquisti).map(([k, v]) => [LABEL[k] || k, String(v)]));
+  section("Crediti e debiti (posizione)", m.crediti_debiti && m.crediti_debiti.map(p => [p.currency, `crediti ${cur(p.receivable, p.currency)} · debiti ${cur(p.payable, p.currency)}`]));
+  section("Avvisi sui dati", m.avvisi && m.avvisi.map(c => [c.replace(/_/g, " "), "presente"]));
+  section("Errori al momento della copia", P.errori.map(e => [e, "non disponibile"]), null, "Nessun errore: tutte le sezioni sono state lette.");
+  const om = el("section"); om.appendChild(el("h2", "Omesso da questa copia")); const ul = el("ul"); for (const o of P.omessi) ul.appendChild(el("li", o)); om.appendChild(ul);
+  om.appendChild(el("p", `Origine: ${P.origine.dispositivo} · ${P.origine.motore} · formato ${P.schema}`, "note")); view.appendChild(om);
+}
+</script>
+</body>
+</html>

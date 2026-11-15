@@ -1,0 +1,45 @@
+// CUORE — configurazione di PRODUZIONE da compilare con i tuoi valori. Deploy, segreti e risorse remote sono passi
+// espliciti tuoi: mai `wrangler deploy` o `--remote` prima di aver compilato tutto.
+// Senza ACCESS_TEAM_DOMAIN, ACCESS_AUD e ACCESS_ALLOWED_EMAILS validi il Worker rifiuta tutto (503): vuoti qui di proposito.
+// ACCESS_ALLOWED_EMAILS (dato personale) va impostata come segreto al momento del deploy, mai in questo file.
+// ACCESS_SERVIZIO_SCHOOL (E3): Client ID del token di servizio `mac-school` (non segreto); assente = il Mac non puo'
+// inviare il feed School (503). Si aggiunge solo quando il token esiste, con autorizzazione. Stesso schema per
+// ACCESS_SERVIZIO_BACKUP (L1, token `mac-backup`, ritiro dei backup): assente = ritiro chiuso (503).
+// Il banco di misura NON e' qui: e' un Worker separato (wrangler.misure.jsonc), mai nell'ingresso di produzione.
+{
+  "$schema": "../finance/node_modules/wrangler/config-schema.json",
+  "name": "cuore",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": { "enabled": false },
+  "rules": [
+    { "type": "Text", "globs": ["**/*.html", "**/*.csv", "**/app/sw.js", "**/app/push.js", "**/*.webmanifest"], "fallthrough": true },
+    { "type": "Data", "globs": ["**/app/icons/*.png"], "fallthrough": true }
+  ],
+  "durable_objects": {
+    "bindings": [
+      { "name": "FINANCE", "class_name": "FinanceVetrina" },
+      { "name": "SCHOOL", "class_name": "SchoolFeed" }
+    ]
+  },
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["FinanceVetrina"] },
+    { "tag": "v2", "new_sqlite_classes": ["SchoolFeed"] }
+  ],
+  // L1, backup conservati (7 copie, src/backup-cloud.ts): serve un bucket R2 (`wrangler r2 bucket create cuore-backup`);
+  // R2 puo' chiedere un metodo di pagamento all'attivazione. Senza il bucket: nessun backup, ritiro 503.
+  "r2_buckets": [{ "binding": "BACKUP", "bucket_name": "cuore-backup" }],
+  // Cron in UTC (limite dell'account): il primo e' quello storico delle automazioni; gli altri due servono ai
+  // promemoria delle 07:15, 15:00 e 19:00 ora italiana, un orario per l'ora solare e uno per l'ora legale
+  // (src/automazioni.ts, promemoriaMoment: l'orario della stagione sbagliata non fa nulla). 19:00 d'estate = 17:00 UTC.
+  "triggers": { "crons": ["0 5,11,17,21 * * *", "15 5,6 * * *", "0 13,14,18 * * *", "0 9,10,18,19 * * *"] },
+  // Da compilare con i propri valori (vedi README): dominio del team e AUD dell'applicazione Access, chiave pubblica VAPID
+  // (`npm run vapid`) e indirizzo del proprio Worker; i Client ID dei token di servizio e le chiavi pubbliche dei backup
+  // (`npm run chiavi-mac`) si aggiungono quando esistono. Vuoti = il Worker rifiuta tutto (503).
+  "vars": { "ACCESS_TEAM_DOMAIN": "", "ACCESS_AUD": "", "CUORE_STATO": "attivo",
+    "VAPID_PUBLIC_KEY": "", "VAPID_SUBJECT": "",
+    "CUORE_FINANCE_ORIGINE": "mac",
+    "CUORE_SCRITTURE": "attive" }
+}

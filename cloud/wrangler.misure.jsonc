@@ -1,0 +1,19 @@
+// BANCO DI MISURA (src/misure.ts) — Worker SEPARATO e TEMPORANEO, solo dati SINTETICI generati nel codice.
+// Non e' la vetrina: nome diverso, ingresso diverso, Durable Object suo (`BancoMisure`), nessun binding FINANCE/SCHOOL,
+// nessun Cron, nessun segreto. Si pubblica SOLO con l'ok del titolare, dopo la vetrina, e poi si cancella:
+//   wrangler deploy -c wrangler.misure.jsonc --var MISURE_TOKEN_SHA256:<impronta del token>   (vedi cloud/README.md)
+//   wrangler delete -c wrangler.misure.jsonc
+// Senza MISURE_TOKEN_SHA256 risponde 503 a tutto (chiuso per difetto): qui resta vuota di proposito.
+// In locale non serve wrangler: `npm run misure` lo avvia in Miniflare (scripts/misura-banco.ts).
+{
+  "$schema": "../finance/node_modules/wrangler/config-schema.json",
+  "name": "cuore-misure-sintetiche",
+  "main": "src/misure.ts",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": { "enabled": false },
+  "durable_objects": { "bindings": [{ "name": "BANCO", "class_name": "BancoMisure" }] },
+  "migrations": [{ "tag": "m1", "new_sqlite_classes": ["BancoMisure"] }],
+  "vars": { "MISURE_TOKEN_SHA256": "" }
+}

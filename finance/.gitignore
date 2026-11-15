@@ -1,0 +1,72 @@
+# --- Cloud Finance: cosa NON deve mai finire nel repository ---
+
+# Segreti, token, chiavi, credenziali
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+*.pem
+*.key
+*.p12
+*.secret
+*.secrets
+secrets/
+*credentials*
+*token*
+*password*
+
+# Database e dati personali: i dati reali vivono FUORI dal repository
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+data/
+private/
+estratti/
+statements/
+*.sqlite3.backup
+*.bak
+
+# Estratti, export e fogli bancari reali (PDF, fogli di calcolo, formati bancari, archivi)
+*.pdf
+*.xlsx
+*.xlsm
+*.xls
+*.ods
+*.numbers
+*.ofx
+*.qfx
+*.qif
+*.mt940
+*.camt*
+*.zip
+# CSV: ammessi SOLO gli esempi sintetici del repository
+*.csv
+!examples/sintetici/*.csv
+
+# Staging, piani di importazione, correzioni, regole reali, manifest e transcript
+*staging*.json
+cloud_finance_mps_*
+plan-*.json
+piani/
+fonti/
+*corrections*.json
+*correzioni*.json
+regole.json
+*.sha256
+MANIFEST*
+*.jsonl
+*account-statement*
+*estratto*conto*
+
+# Build, dipendenze, cache
+node_modules/
+dist/
+.wrangler/
+coverage/
+*.log
+*.tmp
+.DS_Store
+._*

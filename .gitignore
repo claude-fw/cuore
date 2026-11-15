@@ -1,0 +1,66 @@
+# --- Claude Cuore: cosa NON deve mai finire nel repository ---
+# (finance/.gitignore aggiunge le regole specifiche del modulo Finance)
+
+# Segreti, password, token, chiavi, credenziali
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.p8
+*.keystore
+*.jks
+id_rsa*
+id_ed25519*
+*.secret
+*.secrets
+secrets/
+*credentials*
+.netrc
+.npmrc
+.pypirc
+service-account*.json
+client_secret*.json
+
+# Impostazioni locali di Claude Code
+.claude/
+
+# Database, registri, transazioni e dati personali: vivono FUORI dal repository
+# (~/Library/Application Support/Cloud/school e ~/Library/Application Support/Cloud/finance)
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+*.jsonl
+data/
+private/
+estratti/
+statements/
+last_summary.json
+state.json
+*.lock
+
+# File temporanei, cache, log, build
+.DS_Store
+._*
+*.tmp
+*.swp
+*.log
+*.bak
+*.orig
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+dist/
+.wrangler/
+coverage/
+*.dmg
+*.zip

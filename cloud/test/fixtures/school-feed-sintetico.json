@@ -1,0 +1,2340 @@
+{
+  "schema": "cuore.school.feed/1",
+  "esito": "completo",
+  "sola_lettura_verificata": true,
+  "generato": "2026-11-01T12:00:00+02:00",
+  "pagine": {
+    "home": {
+      "schema": "cloud.school.dashboard/1",
+      "pagina": "home",
+      "materia": null,
+      "riferimento_temporale": {
+        "now": "2026-11-01T12:00:00+02:00",
+        "data_riferimento": "2026-11-01"
+      },
+      "blocchi": [
+        {
+          "id": "oggi",
+          "titolo": "Oggi",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "data": "2026-11-01",
+            "anno_operativo": "2026-27"
+          },
+          "provenienza": {
+            "contratto": "cloud.school.priority/1",
+            "versione": "r1-8d55af"
+          }
+        },
+        {
+          "id": "attenzione",
+          "titolo": "Cosa merita attenzione",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "materie_per_priorita": {
+              "alta": ["matematica"],
+              "attenzione": ["fisica"],
+              "informativa": ["italiano"],
+              "non_determinabile": [],
+              "nessuna": ["filosofia", "inglese", "latino", "scienze", "storia"]
+            },
+            "dettaglio": "pagina 'attenzione'"
+          },
+          "provenienza": {
+            "contratto": "cloud.school.priority/1",
+            "versione": "r1-8d55af"
+          }
+        },
+        {
+          "id": "prossimi_impegni",
+          "titolo": "Verifiche e scadenze note",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": [
+            {
+              "data": "2026-11-02",
+              "materia": "matematica",
+              "tipo": "verifica",
+              "priorita": "alta",
+              "affidabilita": "alta",
+              "motivo": "verifica attribuita tra 1 giorno (2026-11-02)",
+              "oggetto": "cvv:1000101"
+            },
+            {
+              "data": "2026-11-04",
+              "materia": "fisica",
+              "tipo": "verifica",
+              "priorita": "attenzione",
+              "affidabilita": "alta",
+              "motivo": "verifica attribuita tra 3 giorni (2026-11-04)",
+              "oggetto": "cvv:1000102"
+            },
+            {
+              "data": "2026-11-06",
+              "materia": "matematica",
+              "tipo": "compito",
+              "priorita": "attenzione",
+              "affidabilita": "alta",
+              "motivo": "compito con scadenza tra 5 giorni (2026-11-06)",
+              "oggetto": "cvv:3000001"
+            },
+            {
+              "data": "2026-11-09",
+              "materia": "italiano",
+              "tipo": "verifica",
+              "priorita": "informativa",
+              "affidabilita": "media",
+              "motivo": "verifica attribuita tra 8 giorni (2026-11-09)",
+              "oggetto": "cvv:1000104"
+            },
+            {
+              "data": "2026-11-11",
+              "materia": "matematica",
+              "tipo": "compito",
+              "priorita": "informativa",
+              "affidabilita": "alta",
+              "motivo": "compito con scadenza tra 10 giorni (2026-11-11)",
+              "oggetto": "cvv:3000002"
+            }
+          ],
+          "provenienza": {
+            "contratto": "cloud.school.priority/1",
+            "versione": "r1-8d55af"
+          }
+        },
+        {
+          "id": "azioni_disponibili",
+          "titolo": "Azioni disponibili",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "totale": 5,
+            "per_azione": {
+              "controllare_verifica": 3,
+              "aprire_preparazione": 0,
+              "controllare_compito": 2,
+              "leggere_comunicazione": 0,
+              "verificare_informazione": 0
+            },
+            "per_eseguibilita": {
+              "eseguibile": 3,
+              "parzialmente_eseguibile": 2,
+              "non_eseguibile": 0
+            }
+          },
+          "provenienza": {
+            "contratto": "cloud.school.action/1",
+            "versione": "r1-ba79c6"
+          }
+        },
+        {
+          "id": "incertezze",
+          "titolo": "Dati incerti",
+          "stato": "vuoto_valido",
+          "affidabilita": null,
+          "dati": {
+            "materie": [],
+            "medie_voti": "politiche M14 con corrispondenza ClasseViva non verificata",
+            "dettaglio": "pagina 'qualita_dati'"
+          },
+          "provenienza": {
+            "contratto": "cloud.school.priority/1",
+            "versione": "r1-8d55af"
+          }
+        },
+        {
+          "id": "novita",
+          "titolo": "Cosa e' cambiato (ultimi 7 giorni)",
+          "stato": "vuoto_valido",
+          "affidabilita": null,
+          "dati": {
+            "conteggi": {},
+            "ultimi": [],
+            "mostrati": 0,
+            "totale": 0,
+            "prima_lettura_esclusa": 0
+          },
+          "provenienza": {
+            "contratto": "registry.events (M1/M3)",
+            "versione": 2
+          }
+        },
+        {
+          "id": "studio",
+          "titolo": "Dove entrare per studiare",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "materie_con_obiettivi": {
+              "fisica": 1,
+              "italiano": 1,
+              "matematica": 3
+            },
+            "dettaglio": "pagina 'studio'"
+          },
+          "provenienza": {
+            "contratto": "cloud.school.action/1",
+            "versione": "r1-ba79c6"
+          }
+        },
+        {
+          "id": "qualita_sintesi",
+          "titolo": "Qualita' dei dati",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "qualcosa_stale": false,
+            "kind_stale_o_non_letti": [],
+            "voti": "presente",
+            "dettaglio": "pagina 'qualita_dati'"
+          },
+          "provenienza": {
+            "contratto": "registry.freshness (M3)",
+            "versione": 2
+          }
+        }
+      ],
+      "grafici": [],
+      "provenance": {
+        "schema": "cloud.school.dashboard/1",
+        "dashboard_version": "r1-257a6a",
+        "contratti_usati": {
+          "cloud.school.action/1": {
+            "action_version": "r1-ba79c6",
+            "context_version": "r1-b43190",
+            "priority_version": "r1-8d55af",
+            "status_version": "r1-68b05a"
+          },
+          "cloud.school.priority/1": {
+            "comm_version": "r2-765125",
+            "context_version": "r1-b43190",
+            "link_version": "r1-15cce5",
+            "priority_version": "r1-8d55af",
+            "status_version": "r1-68b05a"
+          },
+          "cloud.school.records/1": {
+            "absence_interp_version": "r1-3ec15b",
+            "grade_interp_version": "r1-077773",
+            "records_version": "r1-8992ce"
+          }
+        }
+      }
+    },
+    "voti": {
+      "schema": "cloud.school.dashboard/1",
+      "pagina": "voti",
+      "materia": null,
+      "riferimento_temporale": {
+        "now": "2026-11-01T12:00:00+02:00",
+        "data_riferimento": "2026-11-01"
+      },
+      "blocchi": [
+        {
+          "id": "complessivo",
+          "titolo": "Complessivo",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "ambito": "tutte le materie",
+            "stato": "media_calcolabile",
+            "n_totali": 9,
+            "n_inclusi": 6,
+            "esclusi": {
+              "escluso_annullato": ["cvv:3"],
+              "escluso_non_numerico": ["cvv:4", "cvv:7"]
+            },
+            "medie": {
+              "media_pesata_weightfactor": {
+                "n": 6,
+                "uid_usati": ["cvv:1", "cvv:5", "cvv:6", "cvv:9", "cvv:10", "cvv:2"],
+                "somma_pesi": 6,
+                "pesi_assunti": {
+                  "n": 1,
+                  "uid": ["cvv:5"],
+                  "valore_assunto": 1
+                },
+                "calcolabile": true,
+                "valore": 6.62,
+                "valore_esatto": 6.625
+              },
+              "media_aritmetica_semplice": {
+                "calcolabile": true,
+                "valore": 6.88,
+                "valore_esatto": 6.875,
+                "n": 6,
+                "uid_usati": ["cvv:1", "cvv:5", "cvv:6", "cvv:9", "cvv:10", "cvv:2"]
+              }
+            },
+            "distribuzione": {
+              "fasce": [
+                "[0,1)",
+                "[1,2)",
+                "[2,3)",
+                "[3,4)",
+                "[4,5)",
+                "[5,6)",
+                "[6,7)",
+                "[7,8)",
+                "[8,9)",
+                "[9,10]"
+              ],
+              "conteggi": {
+                "[0,1)": 0,
+                "[1,2)": 0,
+                "[2,3)": 0,
+                "[3,4)": 0,
+                "[4,5)": 0,
+                "[5,6)": 1,
+                "[6,7)": 2,
+                "[7,8)": 2,
+                "[8,9)": 0,
+                "[9,10]": 1
+              },
+              "base": "voti inclusi"
+            },
+            "serie": [
+              {
+                "data": "2026-10-29",
+                "uid": "cvv:1",
+                "valore": 7.25,
+                "peso_raw": 1,
+                "progressiva": {
+                  "media_pesata_weightfactor": 7.25,
+                  "media_aritmetica_semplice": 7.25
+                }
+              },
+              {
+                "data": "2026-10-30",
+                "uid": "cvv:5",
+                "valore": 6.0,
+                "peso_raw": null,
+                "progressiva": {
+                  "media_pesata_weightfactor": 6.62,
+                  "media_aritmetica_semplice": 6.62
+                }
+              },
+              {
+                "data": "2026-10-30",
+                "uid": "cvv:6",
+                "valore": 6.5,
+                "peso_raw": 0,
+                "progressiva": {
+                  "media_pesata_weightfactor": 6.62,
+                  "media_aritmetica_semplice": 6.58
+                }
+              },
+              {
+                "data": "2026-10-30",
+                "uid": "cvv:9",
+                "valore": 7.0,
+                "peso_raw": 1,
+                "progressiva": {
+                  "media_pesata_weightfactor": 6.75,
+                  "media_aritmetica_semplice": 6.69
+                }
+              },
+              {
+                "data": "2026-10-31",
+                "uid": "cvv:10",
+                "valore": 9.5,
+                "peso_raw": 1,
+                "progressiva": {
+                  "media_pesata_weightfactor": 7.44,
+                  "media_aritmetica_semplice": 7.25
+                }
+              },
+              {
+                "data": "2026-10-31",
+                "uid": "cvv:2",
+                "valore": 5.0,
+                "peso_raw": 2,
+                "progressiva": {
+                  "media_pesata_weightfactor": 6.62,
+                  "media_aritmetica_semplice": 6.88
+                }
+              }
+            ]
+          },
+          "nota": "medie = politiche nominate (media_pesata_weightfactor primaria); corrispondenza con ClasseViva non verificata",
+          "provenienza": {
+            "contratto": "cloud.school.records/1",
+            "versione": "r1-8992ce"
+          }
+        },
+        {
+          "id": "per_materia",
+          "titolo": "Per materia",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": [
+            {
+              "materia": "filosofia",
+              "stato": "nessun_voto",
+              "n": 0,
+              "inclusi": 0,
+              "medie": {
+                "media_pesata_weightfactor": null,
+                "media_aritmetica_semplice": null
+              }
+            },
+            {
+              "materia": "fisica",
+              "stato": "media_calcolabile",
+              "n": 1,
+              "inclusi": 1,
+              "medie": {
+                "media_pesata_weightfactor": 6.0,
+                "media_aritmetica_semplice": 6.0
+              }
+            },
+            {
+              "materia": "inglese",
+              "stato": "nessun_voto",
+              "n": 0,
+              "inclusi": 0,
+              "medie": {
+                "media_pesata_weightfactor": null,
+                "media_aritmetica_semplice": null
+              }
+            },
+            {
+              "materia": "italiano",
+              "stato": "nessun_voto",
+              "n": 0,
+              "inclusi": 0,
+              "medie": {
+                "media_pesata_weightfactor": null,
+                "media_aritmetica_semplice": null
+              }
+            },
+            {
+              "materia": "latino",
+              "stato": "nessun_voto",
+              "n": 0,
+              "inclusi": 0,
+              "medie": {
+                "media_pesata_weightfactor": null,
+                "media_aritmetica_semplice": null
+              }
+            },
+            {
+              "materia": "matematica",
+              "stato": "media_calcolabile",
+              "n": 5,
+              "inclusi": 3,
+              "medie": {
+                "media_pesata_weightfactor": 6.69,
+                "media_aritmetica_semplice": 7.25
+              }
+            },
+            {
+              "materia": "religione",
+              "stato": "media_non_calcolabile",
+              "n": 1,
+              "inclusi": 0,
+              "medie": {
+                "media_pesata_weightfactor": null,
+                "media_aritmetica_semplice": null
+              }
+            },
+            {
+              "materia": "scienze",
+              "stato": "nessun_voto",
+              "n": 0,
+              "inclusi": 0,
+              "medie": {
+                "media_pesata_weightfactor": null,
+                "media_aritmetica_semplice": null
+              }
+            },
+            {
+              "materia": "storia",
+              "stato": "media_non_calcolabile",
+              "n": 1,
+              "inclusi": 1,
+              "medie": {
+                "media_pesata_weightfactor": null,
+                "media_aritmetica_semplice": 6.5
+              }
+            }
+          ],
+          "provenienza": {
+            "contratto": "cloud.school.records/1",
+            "versione": "r1-8992ce"
+          }
+        },
+        {
+          "id": "per_periodo",
+          "titolo": "Per periodo",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": [
+            {
+              "periodo": "Primo periodo",
+              "stato": "media_calcolabile",
+              "n_totali": 8,
+              "n_inclusi": 5,
+              "esclusi": {
+                "escluso_annullato": ["cvv:3"],
+                "escluso_non_numerico": ["cvv:4", "cvv:7"]
+              },
+              "medie": {
+                "media_pesata_weightfactor": {
+                  "n": 5,
+                  "uid_usati": ["cvv:1", "cvv:5", "cvv:6", "cvv:9", "cvv:2"],
+                  "somma_pesi": 5,
+                  "pesi_assunti": {
+                    "n": 1,
+                    "uid": ["cvv:5"],
+                    "valore_assunto": 1
+                  },
+                  "calcolabile": true,
+                  "valore": 6.05,
+                  "valore_esatto": 6.05
+                },
+                "media_aritmetica_semplice": {
+                  "calcolabile": true,
+                  "valore": 6.35,
+                  "valore_esatto": 6.35,
+                  "n": 5,
+                  "uid_usati": ["cvv:1", "cvv:5", "cvv:6", "cvv:9", "cvv:2"]
+                }
+              },
+              "distribuzione": {
+                "fasce": [
+                  "[0,1)",
+                  "[1,2)",
+                  "[2,3)",
+                  "[3,4)",
+                  "[4,5)",
+                  "[5,6)",
+                  "[6,7)",
+                  "[7,8)",
+                  "[8,9)",
+                  "[9,10]"
+                ],
+                "conteggi": {
+                  "[0,1)": 0,
+                  "[1,2)": 0,
+                  "[2,3)": 0,
+                  "[3,4)": 0,
+                  "[4,5)": 0,
+                  "[5,6)": 1,
+                  "[6,7)": 2,
+                  "[7,8)": 2,
+                  "[8,9)": 0,
+                  "[9,10]": 0
+                },
+                "base": "voti inclusi"
+              },
+              "serie": [
+                {
+                  "data": "2026-10-29",
+                  "uid": "cvv:1",
+                  "valore": 7.25,
+                  "peso_raw": 1,
+                  "progressiva": {
+                    "media_pesata_weightfactor": 7.25,
+                    "media_aritmetica_semplice": 7.25
+                  }
+                },
+                {
+                  "data": "2026-10-30",
+                  "uid": "cvv:5",
+                  "valore": 6.0,
+                  "peso_raw": null,
+                  "progressiva": {
+                    "media_pesata_weightfactor": 6.62,
+                    "media_aritmetica_semplice": 6.62
+                  }
+                },
+                {
+                  "data": "2026-10-30",
+                  "uid": "cvv:6",
+                  "valore": 6.5,
+                  "peso_raw": 0,
+                  "progressiva": {
+                    "media_pesata_weightfactor": 6.62,
+                    "media_aritmetica_semplice": 6.58
+                  }
+                },
+                {
+                  "data": "2026-10-30",
+                  "uid": "cvv:9",
+                  "valore": 7.0,
+                  "peso_raw": 1,
+                  "progressiva": {
+                    "media_pesata_weightfactor": 6.75,
+                    "media_aritmetica_semplice": 6.69
+                  }
+                },
+                {
+                  "data": "2026-10-31",
+                  "uid": "cvv:2",
+                  "valore": 5.0,
+                  "peso_raw": 2,
+                  "progressiva": {
+                    "media_pesata_weightfactor": 6.05,
+                    "media_aritmetica_semplice": 6.35
+                  }
+                }
+              ]
+            },
+            {
+              "periodo": "Secondo periodo",
+              "stato": "media_calcolabile",
+              "n_totali": 1,
+              "n_inclusi": 1,
+              "esclusi": {
+                "escluso_annullato": [],
+                "escluso_non_numerico": []
+              },
+              "medie": {
+                "media_pesata_weightfactor": {
+                  "n": 1,
+                  "uid_usati": ["cvv:10"],
+                  "somma_pesi": 1,
+                  "pesi_assunti": {
+                    "n": 0,
+                    "uid": [],
+                    "valore_assunto": 1
+                  },
+                  "calcolabile": true,
+                  "valore": 9.5,
+                  "valore_esatto": 9.5
+                },
+                "media_aritmetica_semplice": {
+                  "calcolabile": true,
+                  "valore": 9.5,
+                  "valore_esatto": 9.5,
+                  "n": 1,
+                  "uid_usati": ["cvv:10"]
+                }
+              },
+              "distribuzione": {
+                "fasce": [
+                  "[0,1)",
+                  "[1,2)",
+                  "[2,3)",
+                  "[3,4)",
+                  "[4,5)",
+                  "[5,6)",
+                  "[6,7)",
+                  "[7,8)",
+                  "[8,9)",
+                  "[9,10]"
+                ],
+                "conteggi": {
+                  "[0,1)": 0,
+                  "[1,2)": 0,
+                  "[2,3)": 0,
+                  "[3,4)": 0,
+                  "[4,5)": 0,
+                  "[5,6)": 0,
+                  "[6,7)": 0,
+                  "[7,8)": 0,
+                  "[8,9)": 0,
+                  "[9,10]": 1
+                },
+                "base": "voti inclusi"
+              },
+              "serie": [
+                {
+                  "data": "2026-10-31",
+                  "uid": "cvv:10",
+                  "valore": 9.5,
+                  "peso_raw": 1,
+                  "progressiva": {
+                    "media_pesata_weightfactor": 9.5,
+                    "media_aritmetica_semplice": 9.5
+                  }
+                }
+              ]
+            }
+          ],
+          "provenienza": {
+            "contratto": "cloud.school.records/1",
+            "versione": "r1-8992ce"
+          }
+        },
+        {
+          "id": "politiche",
+          "titolo": "Politiche di media",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "primaria": "media_pesata_weightfactor",
+            "elenco": {
+              "media_pesata_weightfactor": {
+                "formula": "somma(decimalValue * w) / somma(w) sui voti inclusi; w = weightFactor se numerico e >= 0, altrimenti 1 (peso assunto, dichiarato in pesi_assunti); non calcolabile se nessun voto incluso o somma(w) = 0",
+                "arrotondamento": "2 decimali (valore esatto in valore_esatto)",
+                "corrispondenza_classeviva": "non_verificata"
+              },
+              "media_aritmetica_semplice": {
+                "formula": "somma(decimalValue) / n sui voti inclusi; non calcolabile se nessun voto incluso",
+                "arrotondamento": "2 decimali (valore esatto in valore_esatto)",
+                "corrispondenza_classeviva": "non_verificata"
+              }
+            },
+            "esclusioni": {
+              "escluso_annullato": "raw.canceled vero",
+              "escluso_non_numerico": "decimalValue assente o non numerico"
+            },
+            "nota": "le medie sono politiche nominate: non 'la media dello studente'; altre politiche si aggiungono senza riscrivere i dati"
+          },
+          "provenienza": {
+            "contratto": "cloud.school.records/1",
+            "versione": "r1-8992ce"
+          }
+        }
+      ],
+      "grafici": [
+        {
+          "id": "andamento_voti",
+          "titolo": "Andamento voti",
+          "tipo": "linea",
+          "asse_x": "data",
+          "asse_y": "decimalValue",
+          "serie": [
+            {
+              "nome": "fisica",
+              "punti": [
+                {
+                  "x": "2026-10-30",
+                  "y": 6.0,
+                  "uid": "cvv:5"
+                }
+              ]
+            },
+            {
+              "nome": "matematica",
+              "punti": [
+                {
+                  "x": "2026-10-29",
+                  "y": 7.25,
+                  "uid": "cvv:1"
+                },
+                {
+                  "x": "2026-10-31",
+                  "y": 9.5,
+                  "uid": "cvv:10"
+                },
+                {
+                  "x": "2026-10-31",
+                  "y": 5.0,
+                  "uid": "cvv:2"
+                }
+              ]
+            },
+            {
+              "nome": "storia",
+              "punti": [
+                {
+                  "x": "2026-10-30",
+                  "y": 6.5,
+                  "uid": "cvv:6"
+                }
+              ]
+            }
+          ],
+          "provenienza": {
+            "contratto": "cloud.school.records/1",
+            "versione": "r1-8992ce"
+          }
+        },
+        {
+          "id": "andamento_media",
+          "titolo": "Andamento media (media_pesata_weightfactor)",
+          "tipo": "linea",
+          "asse_x": "data",
+          "asse_y": "media",
+          "serie": [
+            {
+              "nome": "fisica",
+              "punti": [
+                {
+                  "x": "2026-10-30",
+                  "y": 6.0,
+                  "uid": "cvv:5"
+                }
+              ]
+            },
+            {
+              "nome": "matematica",
+              "punti": [
+                {
+                  "x": "2026-10-29",
+                  "y": 7.25,
+                  "uid": "cvv:1"
+                },
+                {
+                  "x": "2026-10-31",
+                  "y": 8.38,
+                  "uid": "cvv:10"
+                },
+                {
+                  "x": "2026-10-31",
+                  "y": 6.69,
+                  "uid": "cvv:2"
+                }
+              ]
+            }
+          ],
+          "formula": "somma(decimalValue * w) / somma(w) sui voti inclusi; w = weightFactor se numerico e >= 0, altrimenti 1 (peso assunto, dichiarato in pesi_assunti); non calcolabile se nessun voto incluso o somma(w) = 0",
+          "valore_verificato": false,
+          "provenienza": {
+            "contratto": "cloud.school.records/1",
+            "versione": "r1-8992ce"
+          }
+        },
+        {
+          "id": "media_per_materia",
+          "titolo": "Media per materia (media_pesata_weightfactor)",
+          "tipo": "barre",
+          "asse_x": "materia",
+          "asse_y": "media",
+          "serie": [
+            {
+              "nome": "media_pesata_weightfactor",
+              "punti": [
+                {
+                  "x": "fisica",
+                  "y": 6.0,
+                  "uid": null
+                },
+                {
+                  "x": "matematica",
+                  "y": 6.69,
+                  "uid": null
+                }
+              ]
+            }
+          ],
+          "formula": "somma(decimalValue * w) / somma(w) sui voti inclusi; w = weightFactor se numerico e >= 0, altrimenti 1 (peso assunto, dichiarato in pesi_assunti); non calcolabile se nessun voto incluso o somma(w) = 0",
+          "valore_verificato": false,
+          "provenienza": {
+            "contratto": "cloud.school.records/1",
+            "versione": "r1-8992ce"
+          }
+        },
+        {
+          "id": "distribuzione_voti",
+          "titolo": "Distribuzione voti (voti inclusi)",
+          "tipo": "barre_impilate",
+          "asse_x": "fascia",
+          "asse_y": "numero",
+          "serie": [
+            {
+              "nome": "fisica",
+              "punti": [
+                {
+                  "x": "[0,1)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[1,2)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[2,3)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[3,4)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[4,5)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[5,6)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[6,7)",
+                  "y": 1,
+                  "uid": null
+                },
+                {
+                  "x": "[7,8)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[8,9)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[9,10]",
+                  "y": 0,
+                  "uid": null
+                }
+              ]
+            },
+            {
+              "nome": "matematica",
+              "punti": [
+                {
+                  "x": "[0,1)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[1,2)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[2,3)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[3,4)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[4,5)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[5,6)",
+                  "y": 1,
+                  "uid": null
+                },
+                {
+                  "x": "[6,7)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[7,8)",
+                  "y": 1,
+                  "uid": null
+                },
+                {
+                  "x": "[8,9)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[9,10]",
+                  "y": 1,
+                  "uid": null
+                }
+              ]
+            },
+            {
+              "nome": "storia",
+              "punti": [
+                {
+                  "x": "[0,1)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[1,2)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[2,3)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[3,4)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[4,5)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[5,6)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[6,7)",
+                  "y": 1,
+                  "uid": null
+                },
+                {
+                  "x": "[7,8)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[8,9)",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "[9,10]",
+                  "y": 0,
+                  "uid": null
+                }
+              ]
+            }
+          ],
+          "provenienza": {
+            "contratto": "cloud.school.records/1",
+            "versione": "r1-8992ce"
+          }
+        },
+        {
+          "id": "media_complessiva",
+          "titolo": "Media complessiva (media_pesata_weightfactor)",
+          "tipo": "indicatore",
+          "asse_x": null,
+          "asse_y": "media",
+          "serie": [
+            {
+              "nome": "complessiva",
+              "punti": [
+                {
+                  "x": null,
+                  "y": 6.62,
+                  "uid": null
+                }
+              ]
+            }
+          ],
+          "formula": "somma(decimalValue * w) / somma(w) sui voti inclusi; w = weightFactor se numerico e >= 0, altrimenti 1 (peso assunto, dichiarato in pesi_assunti); non calcolabile se nessun voto incluso o somma(w) = 0",
+          "valore_verificato": false,
+          "provenienza": {
+            "contratto": "cloud.school.records/1",
+            "versione": "r1-8992ce"
+          }
+        }
+      ],
+      "provenance": {
+        "schema": "cloud.school.dashboard/1",
+        "dashboard_version": "r1-257a6a",
+        "contratti_usati": {
+          "cloud.school.records/1": {
+            "absence_interp_version": "r1-3ec15b",
+            "grade_interp_version": "r1-077773",
+            "records_version": "r1-8992ce"
+          }
+        }
+      }
+    },
+    "assenze": {
+      "schema": "cloud.school.dashboard/1",
+      "pagina": "assenze",
+      "materia": null,
+      "riferimento_temporale": {
+        "now": "2026-11-01T12:00:00+02:00",
+        "data_riferimento": "2026-11-01"
+      },
+      "blocchi": [
+        {
+          "id": "conteggi",
+          "titolo": "Assenze e ritardi (anno operativo)",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "totale": 4,
+            "per_tipo": {
+              "Assenza": 1,
+              "Da verificare": 1,
+              "Entrata in ritardo": 2
+            },
+            "per_mese": {
+              "2026-09": {
+                "Assenza": 1,
+                "Entrata in ritardo": 1
+              },
+              "2026-10": {
+                "Da verificare": 1,
+                "Entrata in ritardo": 1
+              }
+            },
+            "da_verificare": 1
+          },
+          "provenienza": {
+            "contratto": "cloud.school.records/1",
+            "versione": "r1-8992ce"
+          }
+        },
+        {
+          "id": "eventi",
+          "titolo": "Eventi",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": [
+            {
+              "uid": "cvv:101",
+              "hash": "7f5d42a28da342071eabd4d3a0e98bee706b8bb44786ed8f51c69930ffa22a58",
+              "registry_version": 1,
+              "data": "2026-10-12",
+              "codice": "ABA0",
+              "tipo": "Assenza",
+              "ora": 1,
+              "ore_perse": null,
+              "giustificata": false,
+              "stato_giustificazione": "In approvazione",
+              "da_verificare": []
+            },
+            {
+              "uid": "cvv:102",
+              "hash": "ef69fe614e80efea7c644229cbd3c9a9a586450b37aca403534353043c78dff6",
+              "registry_version": 1,
+              "data": "2026-10-23",
+              "codice": "ABR0",
+              "tipo": "Entrata in ritardo",
+              "ora": 1,
+              "ore_perse": 1,
+              "giustificata": false,
+              "stato_giustificazione": "In approvazione",
+              "da_verificare": []
+            },
+            {
+              "uid": "cvv:103",
+              "hash": "378e84ea2f91a49af5e50fedeeaed5a589c2c7b8f35ad5bbe0c383581659cd35",
+              "registry_version": 1,
+              "data": "2026-10-30",
+              "codice": "ABR0",
+              "tipo": "Entrata in ritardo",
+              "ora": 1,
+              "ore_perse": null,
+              "giustificata": false,
+              "stato_giustificazione": "In approvazione",
+              "da_verificare": []
+            },
+            {
+              "uid": "cvv:104",
+              "hash": "301b42271194f6c06e59cbb19e21f5207842cd48ff26f9f58d95a2143342a030",
+              "registry_version": 1,
+              "data": "2026-11-09",
+              "codice": "ABU0",
+              "tipo": "Da verificare",
+              "ora": 1,
+              "ore_perse": null,
+              "giustificata": false,
+              "stato_giustificazione": "In approvazione",
+              "da_verificare": ["codice 'ABU0' non in tabella verificata"]
+            }
+          ],
+          "nota": "eventi della fonte; tipo solo da tabella verificata (UI web ClasseViva, verificata sulla UI web); le assenze non hanno materia",
+          "provenienza": {
+            "contratto": "cloud.school.records/1",
+            "versione": "r1-8992ce"
+          }
+        }
+      ],
+      "grafici": [
+        {
+          "id": "assenze_per_mese",
+          "titolo": "Assenze e ritardi per mese",
+          "tipo": "barre_impilate",
+          "asse_x": "mese",
+          "asse_y": "numero",
+          "serie": [
+            {
+              "nome": "Assenza",
+              "punti": [
+                {
+                  "x": "2026-09",
+                  "y": 1,
+                  "uid": null
+                },
+                {
+                  "x": "2026-10",
+                  "y": 0,
+                  "uid": null
+                }
+              ]
+            },
+            {
+              "nome": "Da verificare",
+              "punti": [
+                {
+                  "x": "2026-09",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "2026-10",
+                  "y": 1,
+                  "uid": null
+                }
+              ]
+            },
+            {
+              "nome": "Entrata in ritardo",
+              "punti": [
+                {
+                  "x": "2026-09",
+                  "y": 1,
+                  "uid": null
+                },
+                {
+                  "x": "2026-10",
+                  "y": 1,
+                  "uid": null
+                }
+              ]
+            }
+          ],
+          "provenienza": {
+            "contratto": "cloud.school.records/1",
+            "versione": "r1-8992ce"
+          }
+        }
+      ],
+      "provenance": {
+        "schema": "cloud.school.dashboard/1",
+        "dashboard_version": "r1-257a6a",
+        "contratti_usati": {
+          "cloud.school.records/1": {
+            "absence_interp_version": "r1-3ec15b",
+            "grade_interp_version": "r1-077773",
+            "records_version": "r1-8992ce"
+          }
+        }
+      }
+    },
+    "verifiche": {
+      "schema": "cloud.school.dashboard/1",
+      "pagina": "verifiche",
+      "materia": null,
+      "riferimento_temporale": {
+        "now": "2026-11-01T12:00:00+02:00",
+        "data_riferimento": "2026-11-01"
+      },
+      "blocchi": [
+        {
+          "id": "verifiche_future",
+          "titolo": "Verifiche future note",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": [
+            {
+              "materia": "matematica",
+              "uid": "cvv:1000101",
+              "data": "2026-11-02",
+              "testo": "Verifica Matematica",
+              "origine": "agenda_classeviva",
+              "affidabilita": "alta"
+            },
+            {
+              "materia": "fisica",
+              "uid": "cvv:1000102",
+              "data": "2026-11-04",
+              "testo": "Verifica di fisica",
+              "origine": "agenda_classeviva",
+              "affidabilita": "alta"
+            },
+            {
+              "materia": "italiano",
+              "uid": "cvv:1000104",
+              "data": "2026-11-09",
+              "testo": "Verifica su Ariosto",
+              "origine": "agenda_classeviva",
+              "affidabilita": "media"
+            }
+          ],
+          "provenienza": {
+            "contratto": "cloud.school.status/1",
+            "versione": "r1-68b05a"
+          }
+        },
+        {
+          "id": "indizi_non_datati",
+          "titolo": "Indizi di verifica senza data (da verificare)",
+          "stato": "vuoto_valido",
+          "affidabilita": null,
+          "dati": [],
+          "provenienza": {
+            "contratto": "cloud.school.status/1",
+            "versione": "r1-68b05a"
+          }
+        }
+      ],
+      "grafici": [
+        {
+          "id": "calendario_verifiche",
+          "titolo": "Calendario verifiche",
+          "tipo": "calendario",
+          "asse_x": "data",
+          "asse_y": "materia",
+          "serie": [
+            {
+              "nome": "italiano",
+              "punti": [
+                {
+                  "x": "2026-11-09",
+                  "y": "italiano",
+                  "uid": "cvv:1000104"
+                }
+              ]
+            },
+            {
+              "nome": "matematica",
+              "punti": [
+                {
+                  "x": "2026-11-02",
+                  "y": "matematica",
+                  "uid": "cvv:1000101"
+                }
+              ]
+            },
+            {
+              "nome": "fisica",
+              "punti": [
+                {
+                  "x": "2026-11-04",
+                  "y": "fisica",
+                  "uid": "cvv:1000102"
+                }
+              ]
+            }
+          ],
+          "provenienza": {
+            "contratto": "cloud.school.status/1",
+            "versione": "r1-68b05a"
+          }
+        }
+      ],
+      "provenance": {
+        "schema": "cloud.school.dashboard/1",
+        "dashboard_version": "r1-257a6a",
+        "contratti_usati": {
+          "cloud.school.status/1": {
+            "comm_version": "r2-765125",
+            "context_version": "r1-b43190",
+            "link_version": "r1-15cce5",
+            "status_version": "r1-68b05a"
+          }
+        }
+      }
+    },
+    "compiti": {
+      "schema": "cloud.school.dashboard/1",
+      "pagina": "compiti",
+      "materia": null,
+      "riferimento_temporale": {
+        "now": "2026-11-01T12:00:00+02:00",
+        "data_riferimento": "2026-11-01"
+      },
+      "blocchi": [
+        {
+          "id": "compiti_aperti",
+          "titolo": "Compiti aperti",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": [
+            {
+              "materia": "matematica",
+              "uid": "cvv:3000001",
+              "scadenza": "2026-11-06",
+              "testo": "Esercizi di matematica: disequazioni irrazionali pag. 10",
+              "origine": "agenda_classeviva",
+              "stato_operativo": null,
+              "affidabilita": "alta"
+            },
+            {
+              "materia": "matematica",
+              "uid": "cvv:3000002",
+              "scadenza": "2026-11-11",
+              "testo": "Esercizi di matematica: equazioni logaritmiche",
+              "origine": "agenda_classeviva",
+              "stato_operativo": null,
+              "affidabilita": "alta"
+            }
+          ],
+          "provenienza": {
+            "contratto": "cloud.school.status/1",
+            "versione": "r1-68b05a"
+          }
+        },
+        {
+          "id": "compiti_scaduti",
+          "titolo": "Scaduti non consegnati secondo Classroom (14 giorni)",
+          "stato": "vuoto_valido",
+          "affidabilita": null,
+          "dati": [],
+          "nota": "Classroom non dice se la consegna era richiesta",
+          "provenienza": {
+            "contratto": "cloud.school.status/1",
+            "versione": "r1-68b05a"
+          }
+        }
+      ],
+      "grafici": [],
+      "provenance": {
+        "schema": "cloud.school.dashboard/1",
+        "dashboard_version": "r1-257a6a",
+        "contratti_usati": {
+          "cloud.school.status/1": {
+            "comm_version": "r2-765125",
+            "context_version": "r1-b43190",
+            "link_version": "r1-15cce5",
+            "status_version": "r1-68b05a"
+          }
+        }
+      }
+    },
+    "materiali": {
+      "schema": "cloud.school.dashboard/1",
+      "pagina": "materiali",
+      "materia": null,
+      "riferimento_temporale": {
+        "now": "2026-11-01T12:00:00+02:00",
+        "data_riferimento": "2026-11-01"
+      },
+      "blocchi": [
+        {
+          "id": "sintesi",
+          "titolo": "Materiali (anno operativo)",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "totale": 3,
+            "per_stato_materiale": {
+              "identificato_non_acquisito": 3
+            },
+            "per_attribuzione": {
+              "generale": 2,
+              "possibile": 1
+            },
+            "per_tipo_risorsa": {
+              "allegato_classeviva": 2,
+              "drive_file": 1
+            },
+            "per_tipo_padre": {
+              "announcement": 1,
+              "notice": 2
+            },
+            "con_associazioni_m5": 0,
+            "fuori_perimetro": {}
+          },
+          "provenienza": {
+            "contratto": "cloud.school.materials_catalog/1",
+            "versione": "r1-24903c"
+          }
+        },
+        {
+          "id": "per_materia",
+          "titolo": "Per materia",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": [
+            {
+              "materia": "italiano",
+              "totale": 0,
+              "per_attribuzione": {},
+              "con_associazioni_m5": 0
+            },
+            {
+              "materia": "latino",
+              "totale": 0,
+              "per_attribuzione": {},
+              "con_associazioni_m5": 0
+            },
+            {
+              "materia": "inglese",
+              "totale": 1,
+              "per_attribuzione": {
+                "possibile": 1
+              },
+              "con_associazioni_m5": 0
+            },
+            {
+              "materia": "storia",
+              "totale": 0,
+              "per_attribuzione": {},
+              "con_associazioni_m5": 0
+            },
+            {
+              "materia": "filosofia",
+              "totale": 0,
+              "per_attribuzione": {},
+              "con_associazioni_m5": 0
+            },
+            {
+              "materia": "matematica",
+              "totale": 0,
+              "per_attribuzione": {},
+              "con_associazioni_m5": 0
+            },
+            {
+              "materia": "fisica",
+              "totale": 0,
+              "per_attribuzione": {},
+              "con_associazioni_m5": 0
+            },
+            {
+              "materia": "scienze",
+              "totale": 0,
+              "per_attribuzione": {},
+              "con_associazioni_m5": 0
+            }
+          ],
+          "provenienza": {
+            "contratto": "cloud.school.materials_catalog/1",
+            "versione": "r1-24903c"
+          }
+        },
+        {
+          "id": "collegati_agli_obiettivi",
+          "titolo": "Collegati alle verifiche (via M5)",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": [
+            {
+              "materia": "matematica",
+              "obiettivo": "cvv:1000101",
+              "data": "2026-11-02",
+              "materiali": []
+            },
+            {
+              "materia": "fisica",
+              "obiettivo": "cvv:1000102",
+              "data": "2026-11-04",
+              "materiali": []
+            },
+            {
+              "materia": "italiano",
+              "obiettivo": "cvv:1000104",
+              "data": "2026-11-09",
+              "materiali": []
+            }
+          ],
+          "provenienza": {
+            "contratto": "cloud.school.materials_catalog/1",
+            "versione": "r1-24903c"
+          }
+        },
+        {
+          "id": "disponibili",
+          "titolo": "Disponibili in locale",
+          "stato": "non_attivo",
+          "affidabilita": null,
+          "dati": null,
+          "nota": "M19 (acquisizione materiali) non ancora attivo: nessun materiale disponibile in locale",
+          "provenienza": {}
+        }
+      ],
+      "grafici": [
+        {
+          "id": "materiali_per_materia",
+          "titolo": "Materiali identificati per materia",
+          "tipo": "barre_impilate",
+          "asse_x": "materia",
+          "asse_y": "numero",
+          "serie": [
+            {
+              "nome": "determinata",
+              "punti": [
+                {
+                  "x": "italiano",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "latino",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "inglese",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "storia",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "filosofia",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "matematica",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "fisica",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "scienze",
+                  "y": 0,
+                  "uid": null
+                }
+              ]
+            },
+            {
+              "nome": "possibile",
+              "punti": [
+                {
+                  "x": "italiano",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "latino",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "inglese",
+                  "y": 1,
+                  "uid": null
+                },
+                {
+                  "x": "storia",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "filosofia",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "matematica",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "fisica",
+                  "y": 0,
+                  "uid": null
+                },
+                {
+                  "x": "scienze",
+                  "y": 0,
+                  "uid": null
+                }
+              ]
+            }
+          ],
+          "provenienza": {
+            "contratto": "cloud.school.materials_catalog/1",
+            "versione": "r1-24903c"
+          }
+        }
+      ],
+      "provenance": {
+        "schema": "cloud.school.dashboard/1",
+        "dashboard_version": "r1-257a6a",
+        "contratti_usati": {
+          "cloud.school.materials_catalog/1": {
+            "catalog_version": "r1-24903c",
+            "classroom_interp_version": "cls-r1-a8ce1df0",
+            "link_version": "r1-15cce5"
+          },
+          "cloud.school.priority/1": {
+            "comm_version": "r2-765125",
+            "context_version": "r1-b43190",
+            "link_version": "r1-15cce5",
+            "priority_version": "r1-8d55af",
+            "status_version": "r1-68b05a"
+          }
+        }
+      }
+    },
+    "studio": {
+      "schema": "cloud.school.dashboard/1",
+      "pagina": "studio",
+      "materia": null,
+      "riferimento_temporale": {
+        "now": "2026-11-01T12:00:00+02:00",
+        "data_riferimento": "2026-11-01"
+      },
+      "blocchi": [
+        {
+          "id": "studio_italiano",
+          "titolo": "italiano",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "obiettivi": [
+              {
+                "uid": "cvv:1000104",
+                "data": "2026-11-09",
+                "testo": "Verifica su Ariosto"
+              }
+            ],
+            "disponibilita_modalita": {
+              "quadro_obiettivo": "disponibile",
+              "materiale_collegato": "non_disponibile",
+              "rassegna_lezioni": "non_disponibile",
+              "comunicazioni_da_leggere": "non_disponibile",
+              "chiarimento_limiti": "disponibile"
+            },
+            "informazione_insufficiente": [
+              "argomenti_obiettivo",
+              "materiale_collegato",
+              "collegamenti_non_esposti",
+              "materiali_necessari"
+            ]
+          },
+          "provenienza": {
+            "contratto": "cloud.school.study_assistant/1",
+            "versione": "r1-260c59"
+          }
+        },
+        {
+          "id": "studio_latino",
+          "titolo": "latino",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "obiettivi": [],
+            "disponibilita_modalita": {
+              "quadro_obiettivo": "non_disponibile",
+              "materiale_collegato": "non_disponibile",
+              "rassegna_lezioni": "non_disponibile",
+              "comunicazioni_da_leggere": "non_disponibile",
+              "chiarimento_limiti": "disponibile"
+            },
+            "informazione_insufficiente": ["nessun_obiettivo_nel_perimetro"]
+          },
+          "provenienza": {
+            "contratto": "cloud.school.study_assistant/1",
+            "versione": "r1-260c59"
+          }
+        },
+        {
+          "id": "studio_inglese",
+          "titolo": "inglese",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "obiettivi": [],
+            "disponibilita_modalita": {
+              "quadro_obiettivo": "non_disponibile",
+              "materiale_collegato": "non_disponibile",
+              "rassegna_lezioni": "non_disponibile",
+              "comunicazioni_da_leggere": "non_disponibile",
+              "chiarimento_limiti": "disponibile"
+            },
+            "informazione_insufficiente": ["nessun_obiettivo_nel_perimetro"]
+          },
+          "provenienza": {
+            "contratto": "cloud.school.study_assistant/1",
+            "versione": "r1-260c59"
+          }
+        },
+        {
+          "id": "studio_storia",
+          "titolo": "storia",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "obiettivi": [],
+            "disponibilita_modalita": {
+              "quadro_obiettivo": "non_disponibile",
+              "materiale_collegato": "non_disponibile",
+              "rassegna_lezioni": "disponibile",
+              "comunicazioni_da_leggere": "non_disponibile",
+              "chiarimento_limiti": "disponibile"
+            },
+            "informazione_insufficiente": ["nessun_obiettivo_nel_perimetro"]
+          },
+          "provenienza": {
+            "contratto": "cloud.school.study_assistant/1",
+            "versione": "r1-260c59"
+          }
+        },
+        {
+          "id": "studio_filosofia",
+          "titolo": "filosofia",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "obiettivi": [],
+            "disponibilita_modalita": {
+              "quadro_obiettivo": "non_disponibile",
+              "materiale_collegato": "non_disponibile",
+              "rassegna_lezioni": "non_disponibile",
+              "comunicazioni_da_leggere": "non_disponibile",
+              "chiarimento_limiti": "disponibile"
+            },
+            "informazione_insufficiente": ["nessun_obiettivo_nel_perimetro"]
+          },
+          "provenienza": {
+            "contratto": "cloud.school.study_assistant/1",
+            "versione": "r1-260c59"
+          }
+        },
+        {
+          "id": "studio_matematica",
+          "titolo": "matematica",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "obiettivi": [
+              {
+                "uid": "cvv:1000101",
+                "data": "2026-11-02",
+                "testo": "Verifica Matematica"
+              },
+              {
+                "uid": "cvv:3000001",
+                "data": "2026-11-06",
+                "testo": "Esercizi di matematica: disequazioni irrazionali pag. 10"
+              },
+              {
+                "uid": "cvv:3000002",
+                "data": "2026-11-11",
+                "testo": "Esercizi di matematica: equazioni logaritmiche"
+              }
+            ],
+            "disponibilita_modalita": {
+              "quadro_obiettivo": "limitata",
+              "materiale_collegato": "non_disponibile",
+              "rassegna_lezioni": "disponibile",
+              "comunicazioni_da_leggere": "non_disponibile",
+              "chiarimento_limiti": "disponibile"
+            },
+            "informazione_insufficiente": [
+              "argomenti_obiettivo",
+              "materiale_collegato",
+              "collegamenti_non_esposti",
+              "argomenti_obiettivo",
+              "materiale_collegato",
+              "azione_non_completa",
+              "collegamenti_non_esposti",
+              "argomenti_obiettivo",
+              "materiale_collegato",
+              "azione_non_completa",
+              "collegamenti_non_esposti",
+              "materiali_necessari"
+            ]
+          },
+          "provenienza": {
+            "contratto": "cloud.school.study_assistant/1",
+            "versione": "r1-260c59"
+          }
+        },
+        {
+          "id": "studio_fisica",
+          "titolo": "fisica",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "obiettivi": [
+              {
+                "uid": "cvv:1000102",
+                "data": "2026-11-04",
+                "testo": "Verifica di fisica"
+              }
+            ],
+            "disponibilita_modalita": {
+              "quadro_obiettivo": "disponibile",
+              "materiale_collegato": "non_disponibile",
+              "rassegna_lezioni": "non_disponibile",
+              "comunicazioni_da_leggere": "non_disponibile",
+              "chiarimento_limiti": "disponibile"
+            },
+            "informazione_insufficiente": [
+              "argomenti_obiettivo",
+              "materiale_collegato",
+              "collegamenti_non_esposti",
+              "materiali_necessari"
+            ]
+          },
+          "provenienza": {
+            "contratto": "cloud.school.study_assistant/1",
+            "versione": "r1-260c59"
+          }
+        },
+        {
+          "id": "studio_scienze",
+          "titolo": "scienze",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "obiettivi": [],
+            "disponibilita_modalita": {
+              "quadro_obiettivo": "non_disponibile",
+              "materiale_collegato": "non_disponibile",
+              "rassegna_lezioni": "non_disponibile",
+              "comunicazioni_da_leggere": "non_disponibile",
+              "chiarimento_limiti": "disponibile"
+            },
+            "informazione_insufficiente": ["nessun_obiettivo_nel_perimetro"]
+          },
+          "provenienza": {
+            "contratto": "cloud.school.study_assistant/1",
+            "versione": "r1-260c59"
+          }
+        },
+        {
+          "id": "sessioni",
+          "titolo": "Sessioni di studio",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "strumento": "school_study_session_v1",
+            "modalita": ["spiega", "interroga", "esercitati", "correggi", "ripassa", "prepara_obiettivo"],
+            "nota": "lavorano sul contenuto fornito o richiamato da M12; conoscenza generale sempre etichettata"
+          },
+          "provenienza": {
+            "contratto": "cloud.school.study_session/1",
+            "versione": "r1-dbaec6"
+          }
+        },
+        {
+          "id": "non_attivo_store_materiali",
+          "titolo": "store materiali",
+          "stato": "non_attivo",
+          "affidabilita": null,
+          "dati": null,
+          "nota": "M19 (acquisizione materiali) non ancora attivo: nessun materiale disponibile in locale",
+          "provenienza": {}
+        },
+        {
+          "id": "non_attivo_pianificazione",
+          "titolo": "pianificazione",
+          "stato": "non_attivo",
+          "affidabilita": null,
+          "dati": null,
+          "nota": "M22 (pianificazione vincolata) non ancora attivo",
+          "provenienza": {}
+        }
+      ],
+      "grafici": [],
+      "provenance": {
+        "schema": "cloud.school.dashboard/1",
+        "dashboard_version": "r1-257a6a",
+        "contratti_usati": {
+          "cloud.school.study_assistant/1": {
+            "action_version": "r1-ba79c6",
+            "context_version": "r1-b43190",
+            "priority_version": "r1-8d55af",
+            "status_version": "r1-68b05a",
+            "study_assistant_version": "r1-260c59",
+            "study_context_version": "r1-ba321e"
+          }
+        }
+      }
+    },
+    "qualita_dati": {
+      "schema": "cloud.school.dashboard/1",
+      "pagina": "qualita_dati",
+      "materia": null,
+      "riferimento_temporale": {
+        "now": "2026-11-01T12:00:00+02:00",
+        "data_riferimento": "2026-11-01"
+      },
+      "blocchi": [
+        {
+          "id": "freschezza",
+          "titolo": "Freschezza delle fonti",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "soglia_ore": 48,
+            "per_kind": {
+              "classeviva/absence": {
+                "motivo": "ok",
+                "stale": false,
+                "eta_ore": -732.31,
+                "legacy": false
+              },
+              "classeviva/agenda_event": {
+                "motivo": "ok",
+                "stale": false,
+                "eta_ore": -732.31,
+                "legacy": false
+              },
+              "classeviva/grade": {
+                "motivo": "ok",
+                "stale": false,
+                "eta_ore": -732.31,
+                "legacy": false
+              },
+              "classeviva/lesson": {
+                "motivo": "ok",
+                "stale": false,
+                "eta_ore": -732.31,
+                "legacy": false
+              },
+              "classeviva/notice": {
+                "motivo": "ok",
+                "stale": false,
+                "eta_ore": -732.31,
+                "legacy": false
+              },
+              "classroom/announcement": {
+                "motivo": "ok",
+                "stale": false,
+                "eta_ore": -732.31,
+                "legacy": false
+              },
+              "classroom/course": {
+                "motivo": "ok",
+                "stale": false,
+                "eta_ore": -732.31,
+                "legacy": false
+              },
+              "classroom/course_work": {
+                "motivo": "ok",
+                "stale": false,
+                "eta_ore": -732.31,
+                "legacy": false
+              },
+              "classroom/material": {
+                "motivo": "ok",
+                "stale": false,
+                "eta_ore": -732.31,
+                "legacy": false
+              },
+              "classroom/submission": {
+                "motivo": "ok",
+                "stale": false,
+                "eta_ore": -732.31,
+                "legacy": false
+              },
+              "classroom/topic": {
+                "motivo": "ok",
+                "stale": false,
+                "eta_ore": -732.31,
+                "legacy": false
+              }
+            },
+            "qualcosa_stale": false
+          },
+          "nota": "'legacy' = run precedenti a M3: nota di provenienza, non un declassamento",
+          "provenienza": {
+            "contratto": "registry.freshness (M3)",
+            "versione": 2
+          }
+        },
+        {
+          "id": "per_materia",
+          "titolo": "Copertura, lacune e ambiguita' per materia",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": [
+            {
+              "materia": "italiano",
+              "copertura": {
+                "lezioni": "presente",
+                "agenda": "presente",
+                "voti": "presente",
+                "circolari": "presente",
+                "assenze": "fuori_perimetro",
+                "orario": "non_disponibile"
+              },
+              "affidabilita_priorita": "media",
+              "regole_non_valutate": [],
+              "gap": ["dati_valutativi_assenti"],
+              "gap_m7": ["circolare_senza_testo", "corso_non_confermato", "nessuna_lezione_recente"],
+              "ambiguita": []
+            },
+            {
+              "materia": "latino",
+              "copertura": {
+                "lezioni": "presente",
+                "agenda": "presente",
+                "voti": "presente",
+                "circolari": "presente",
+                "assenze": "fuori_perimetro",
+                "orario": "non_disponibile"
+              },
+              "affidabilita_priorita": "alta",
+              "regole_non_valutate": [],
+              "gap": ["dati_valutativi_assenti"],
+              "gap_m7": ["circolare_senza_testo", "corso_non_confermato", "nessuna_lezione_recente"],
+              "ambiguita": []
+            },
+            {
+              "materia": "inglese",
+              "copertura": {
+                "lezioni": "presente",
+                "agenda": "presente",
+                "voti": "presente",
+                "circolari": "presente",
+                "assenze": "fuori_perimetro",
+                "orario": "non_disponibile"
+              },
+              "affidabilita_priorita": "alta",
+              "regole_non_valutate": [],
+              "gap": ["dati_valutativi_assenti"],
+              "gap_m7": [
+                "circolare_senza_testo",
+                "corso_non_confermato",
+                "nessuna_lezione_recente",
+                "possibili_non_comunicazioni_non_coperti"
+              ],
+              "ambiguita": []
+            },
+            {
+              "materia": "storia",
+              "copertura": {
+                "lezioni": "presente",
+                "agenda": "presente",
+                "voti": "presente",
+                "circolari": "presente",
+                "assenze": "fuori_perimetro",
+                "orario": "non_disponibile"
+              },
+              "affidabilita_priorita": "alta",
+              "regole_non_valutate": [],
+              "gap": [],
+              "gap_m7": [
+                "circolare_senza_testo",
+                "corso_non_confermato",
+                "possibili_non_comunicazioni_non_coperti"
+              ],
+              "ambiguita": []
+            },
+            {
+              "materia": "filosofia",
+              "copertura": {
+                "lezioni": "presente",
+                "agenda": "presente",
+                "voti": "presente",
+                "circolari": "presente",
+                "assenze": "fuori_perimetro",
+                "orario": "non_disponibile"
+              },
+              "affidabilita_priorita": "alta",
+              "regole_non_valutate": [],
+              "gap": ["dati_valutativi_assenti"],
+              "gap_m7": [
+                "circolare_senza_testo",
+                "corso_non_confermato",
+                "nessuna_lezione_recente",
+                "possibili_non_comunicazioni_non_coperti"
+              ],
+              "ambiguita": []
+            },
+            {
+              "materia": "matematica",
+              "copertura": {
+                "lezioni": "presente",
+                "agenda": "presente",
+                "voti": "presente",
+                "circolari": "presente",
+                "assenze": "fuori_perimetro",
+                "orario": "non_disponibile"
+              },
+              "affidabilita_priorita": "alta",
+              "regole_non_valutate": [],
+              "gap": [],
+              "gap_m7": [
+                "circolare_senza_testo",
+                "corso_non_confermato",
+                "possibili_non_comunicazioni_non_coperti"
+              ],
+              "ambiguita": []
+            },
+            {
+              "materia": "fisica",
+              "copertura": {
+                "lezioni": "presente",
+                "agenda": "presente",
+                "voti": "presente",
+                "circolari": "presente",
+                "assenze": "fuori_perimetro",
+                "orario": "non_disponibile"
+              },
+              "affidabilita_priorita": "alta",
+              "regole_non_valutate": [],
+              "gap": [],
+              "gap_m7": [
+                "circolare_senza_testo",
+                "corso_non_confermato",
+                "nessuna_lezione_recente",
+                "possibili_non_comunicazioni_non_coperti"
+              ],
+              "ambiguita": []
+            },
+            {
+              "materia": "scienze",
+              "copertura": {
+                "lezioni": "presente",
+                "agenda": "presente",
+                "voti": "presente",
+                "circolari": "presente",
+                "assenze": "fuori_perimetro",
+                "orario": "non_disponibile"
+              },
+              "affidabilita_priorita": "alta",
+              "regole_non_valutate": [],
+              "gap": ["dati_valutativi_assenti"],
+              "gap_m7": ["circolare_senza_testo", "corso_non_confermato", "nessuna_lezione_recente"],
+              "ambiguita": []
+            }
+          ],
+          "provenienza": {
+            "contratto": "cloud.school.status/1",
+            "versione": "r1-68b05a"
+          }
+        },
+        {
+          "id": "voti_assenze",
+          "titolo": "Voti e assenze",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "gap": ["componente_non_verificata", "assenze_da_verificare", "media_classeviva_non_verificata"],
+            "voti": "presente",
+            "assenze": "presente"
+          },
+          "provenienza": {
+            "contratto": "cloud.school.records/1",
+            "versione": "r1-8992ce"
+          }
+        },
+        {
+          "id": "materiali",
+          "titolo": "Materiali",
+          "stato": "dati",
+          "affidabilita": null,
+          "dati": {
+            "gap": ["attribuzione_ambigua", "contenuto_non_acquisito"],
+            "per_attribuzione": {
+              "generale": 2,
+              "possibile": 1
+            }
+          },
+          "provenienza": {
+            "contratto": "cloud.school.materials_catalog/1",
+            "versione": "r1-24903c"
+          }
+        },
+        {
+          "id": "non_attivo_dichiarazioni",
+          "titolo": "dichiarazioni",
+          "stato": "non_attivo",
+          "affidabilita": null,
+          "dati": null,
+          "nota": "M18 (dichiarazioni e conferme utente) non ancora attivo",
+          "provenienza": {}
+        }
+      ],
+      "grafici": [],
+      "provenance": {
+        "schema": "cloud.school.dashboard/1",
+        "dashboard_version": "r1-257a6a",
+        "contratti_usati": {
+          "cloud.school.materials_catalog/1": {
+            "catalog_version": "r1-24903c",
+            "classroom_interp_version": "cls-r1-a8ce1df0",
+            "link_version": "r1-15cce5"
+          },
+          "cloud.school.priority/1": {
+            "comm_version": "r2-765125",
+            "context_version": "r1-b43190",
+            "link_version": "r1-15cce5",
+            "priority_version": "r1-8d55af",
+            "status_version": "r1-68b05a"
+          },
+          "cloud.school.records/1": {
+            "absence_interp_version": "r1-3ec15b",
+            "grade_interp_version": "r1-077773",
+            "records_version": "r1-8992ce"
+          },
+          "cloud.school.status/1": {
+            "comm_version": "r2-765125",
+            "context_version": "r1-b43190",
+            "link_version": "r1-15cce5",
+            "status_version": "r1-68b05a"
+          }
+        }
+      }
+    }
+  },
+  "errori": [],
+  "freschezza": {
+    "disponibile": true,
+    "soglia_ore": 48,
+    "per_fonte": {
+      "classeviva": {
+        "eta_ore_max": -732.31,
+        "non_letti": [],
+        "aggiornato_al": "2026-12-02T00:18:36+02:00"
+      },
+      "classroom": {
+        "eta_ore_max": -732.31,
+        "non_letti": [],
+        "aggiornato_al": "2026-12-02T00:18:36+02:00"
+      }
+    },
+    "tipi_obsoleti": [],
+    "stato": "aggiornati"
+  },
+  "automazione": {
+    "disponibile": false,
+    "motivo": "stato del job non leggibile (FileNotFoundError)",
+    "storico": {
+      "disponibile": true,
+      "fonte": {
+        "log": "school-job.jsonl",
+        "calendario": "LaunchAgent cloud.scuola.job",
+        "caricato_in_launchd": "non verificabile"
+      },
+      "calendario": {
+        "stato": "assente",
+        "orari": [],
+        "all_avvio": null
+      },
+      "prossimo_giro": null,
+      "finestra_ore": 48,
+      "conteggi": {},
+      "in_ritardo": 0,
+      "orari": [],
+      "giri": [],
+      "log": {
+        "stato": "assente",
+        "eventi": 0,
+        "righe_illeggibili": 0,
+        "dal": null
+      },
+      "letto_il": "2026-11-01T12:00:00+02:00"
+    }
+  },
+  "versione_motore": "r1-257a6a",
+  "data_riferimento": "2026-11-01",
+  "materie": {
+    "matematica": "MATEMATICA",
+    "fisica": "FISICA",
+    "storia": "STORIA",
+    "filosofia": "FILOSOFIA",
+    "italiano": "LINGUA E LETTERATURA ITALIANA",
+    "latino": "LINGUA E CULTURA LATINA",
+    "inglese": "LINGUA E CULTURA STRANIERA 1",
+    "scienze": "SCIENZE NATURALI",
+    "religione": "RELIGIONE CATTOLICA/ATTIVITA' ALTERNATIVA"
+  },
+  "contratto": {
+    "schema": "cuore.school.feed/1",
+    "pagine": "cloud.school.dashboard/1",
+    "documentazione": "docs/it/contratto-school.md"
+  },
+  "scritture": {
+    "registry": false,
+    "classeviva": false,
+    "classroom": false,
+    "drive": false
+  }
+}

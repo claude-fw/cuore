@@ -1,0 +1,64 @@
+{
+  "descrizione": "Feed School inviato dal Mac al Durable Object School (blocco E3): unica fonte dei campi ammessi, letta da cloud/src/school.ts (validazione nel cloud) e da scuola/mcp/classeviva/school_cloud_push.py (minimizzazione sul Mac). Ogni campo non elencato e' tolto dal Mac e rifiutato dal cloud.",
+  "schema": "cuore.school.feed/1",
+  "prefisso_schema": "cuore.school.feed/",
+  "schema_pagina": "cloud.school.dashboard/1",
+  "max_byte": 1048576,
+  "soglia_ore": 13,
+  "pagine": ["home", "voti", "assenze", "verifiche", "compiti", "materiali", "studio", "qualita_dati"],
+  "campi": {
+    "feed": [
+      "schema",
+      "esito",
+      "sola_lettura_verificata",
+      "generato",
+      "pagine",
+      "errori",
+      "freschezza",
+      "automazione",
+      "versione_motore",
+      "data_riferimento",
+      "materie",
+      "contratto",
+      "scritture"
+    ],
+    "feed_obbligatori": [
+      "schema",
+      "esito",
+      "sola_lettura_verificata",
+      "generato",
+      "pagine",
+      "errori",
+      "freschezza"
+    ],
+    "errore": ["ambito", "codice", "messaggio"],
+    "pagina": ["schema", "pagina", "materia", "riferimento_temporale", "blocchi", "grafici", "provenance"],
+    "provenance": ["schema", "dashboard_version", "contratti_usati"],
+    "blocco": ["id", "titolo", "stato", "affidabilita", "dati", "nota", "provenienza"],
+    "grafico": [
+      "id",
+      "titolo",
+      "tipo",
+      "asse_x",
+      "asse_y",
+      "serie",
+      "formula",
+      "valore_verificato",
+      "provenienza"
+    ],
+    "provenienza": ["contratto", "versione"]
+  },
+  "esiti": ["completo", "parziale", "non_disponibile"],
+  "stati_freschezza": ["aggiornati", "dati_vecchi", "fonti_non_lette", "non_disponibile"],
+  "stati_blocco": ["dati", "vuoto_valido", "non_letto", "non_disponibile", "non_attivo"],
+  "tipi_grafico": ["linea", "barre", "barre_impilate", "calendario", "indicatore"],
+  "messaggi_errore": {
+    "registro_assente": "registro locale della scuola assente",
+    "materie_non_disponibili": "istantanea delle materie assente o non valida",
+    "rete_bloccata": "il motore ha tentato un accesso di rete durante la lettura: pagina non calcolata",
+    "errore_motore": "errore del motore nel calcolo della pagina",
+    "sola_lettura_violata": "un file letto e' cambiato durante la lettura: nessun dato mostrato",
+    "contratto_non_valido": "pagina non conforme al contratto: non mostrata"
+  },
+  "chiavi_vietate": "pass(word)?|passwd|token|secret|segret|cookie|authori[sz]ation|api_?key|credenzial|credential|jwt"
+}

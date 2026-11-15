@@ -1,0 +1,9 @@
+{
+  "extends": "../finance/tsconfig.json",
+  "compilerOptions": {
+    "typeRoots": ["../finance/node_modules/@types"],
+    "types": ["node"],
+    "resolveJsonModule": true
+  },
+  "include": ["src", "test", "scripts"]
+}

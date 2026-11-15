@@ -1,0 +1,7 @@
+{
+  "name": "cuore",
+  "private": true,
+  "scripts": {
+    "verifica": "sh scripts/verifica.sh"
+  }
+}

@@ -1,0 +1,5 @@
+transaction_id,transaction_date,booking_date,status,amount,currency,description,counterparty,original_amount,original_currency
+DEMO-0001,2026-01-08,2026-01-08,booked,200.00,EUR,Ricarica da conto,,,
+DEMO-0002,2026-01-09,2026-01-10,booked,-27.65,EUR,Libreria online DEMO,Negozio Esempio,-30.00,USD
+DEMO-0003,2026-01-20,2026-01-21,booked,27.65,EUR,Rimborso Libreria online DEMO,Negozio Esempio,30.00,USD
+DEMO-0004,2026-01-25,,pending,-9.90,EUR,Cinema Esempio,Cinema Esempio,,
